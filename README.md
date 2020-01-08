@@ -1926,5 +1926,8 @@ func TestTbsApp_EmptyTest(t *testing.T) {
 LICENSE
 ---
 
-@ 2020 A Phodal Huang's Idea. This code is distributed under the CC BY-NC-SA 4.0 license. See LICENSE in this directory.
+[![Phodal's Book](http://brand.phodal.com/shields/book-small.svg)](https://www.phodal.com/)
 
+© 2020 [Phodal Huang](https://www.phodal.com). This code is distributed under the Creative Commons Attribution-Noncommercial-No Derivative Works 4.0  License. See `LICENSE` in this directory.
+
+[![待我代码编成,娶你为妻可好](http://brand.phodal.com/slogan/slogan.svg)](http://www.xuntayizhan.com/person/ji-ke-ai-qing-zhi-er-shi-dai-wo-dai-ma-bian-cheng-qu-ni-wei-qi-ke-hao-wan/)
