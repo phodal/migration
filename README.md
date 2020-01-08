@@ -1674,7 +1674,7 @@ public CommonResult upload(@RequestParam("file") MultipartFile file) {
 |    2 | POST   | /order/cancelTimeOutOrder   | portal.controller.OmsPortalOrderController.cancelTimeOutOrder   |
 |    5 | POST   | /order/cancelOrder          | portal.controller.OmsPortalOrderController.cancelOrder          |
 
-![Coca Reporter](coca_reporter/arch.svg)
+![Coca Reporter](coca_reporter/api.svg)
 
 #### 高引用 + 高修改分析
 
