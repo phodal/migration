@@ -18,15 +18,17 @@ Phodal 手把手教你：
 
 对就是这些，还没完呢。
 
-# 系统重构与迁移指南
-
-> 软件开发总成本 = 开发成本 + 维护成本；软件维护成本 = 理解成本 + 修改成本 + 测试成本 + 部署成本。—— Ken Beck
-
 （PS 1：考虑到内容的重复度和读者一定会懂得 Google，对于部分的内容，我只编写标题。）
 
 （PS 2：部分内容可以在书上找到对应的内容，我只会给个书名）
 
 （PS 3：我在寒冷的北方杭州，写下了此指南）
+
+# [系统重构与迁移指南](https://migration.ink/)
+
+> 软件开发总成本 = 开发成本 + 维护成本；软件维护成本 = 理解成本 + 修改成本 + 测试成本 + 部署成本。—— Ken Beck
+
+最新版本内容，请访问：[https://migration.ink/](https://migration.ink/)，或者 [https://github.com/phodal/migration](https://github.com/phodal/migration)
 
 模型与原则：
 
@@ -1857,6 +1859,16 @@ func TestTbsApp_EmptyTest(t *testing.T) {
 ### 流程优化
 
 我们在开发的前期缺少对于系统的设计，那么我们将需要花费大量的成本在后期修复他们。
+
+你可以查看我先前写的《[新项目检查清单](https://www.phodal.com/blog/new-project-check-lists/)》完善项目的启动流程，通过 [https://phodal.github.io/new-project-checklist/](https://phodal.github.io/new-project-checklist/) 可以使用这个工具。并借助于《[如何创建你的应用脚手架](https://www.phodal.com/blog/how-to-create-application-boilerplate/)》搭建好项目的脚手架。
+
+借助于 Path to Production [优化你的上线流程](https://www.phodal.com/blog/tech-lead-tools-path-to-production/)
+
+![Path to Production](images/path-to-production.png)
+
+工具见：[https://phodal.github.io/path/](https://phodal.github.io/path/)
+
+你可以在我的 Tech Lead 工具箱中，获得更多工具：https://github.com/phodal/techlead
 
 ### 需求规范化
 
