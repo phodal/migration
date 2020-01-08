@@ -1,0 +1,907 @@
+[
+	{
+		"Package": "com.macro.mall",
+		"Class": "PmsDaoTests",
+		"Type": "Class",
+		"Path": "mall-admin/src/test/com/macro/mall/PmsDaoTests.java",
+		"Fields": [
+			{
+				"Type": "PmsMemberPriceDao",
+				"Value": "memberPriceDao"
+			},
+			{
+				"Type": "PmsProductDao",
+				"Value": "productDao"
+			},
+			{
+				"Type": "Logger",
+				"Value": "LOGGER"
+			}
+		],
+		"Methods": [
+			{
+				"Name": "",
+				"Type": "",
+				"StartLine": 0,
+				"StartLinePosition": 0,
+				"StopLine": 0,
+				"StopLinePosition": 0,
+				"Parameters": null,
+				"MethodCalls": [
+					{
+						"Package": "org.slf4j",
+						"Type": "chain",
+						"Class": "LoggerFactory",
+						"MethodName": "getLogger",
+						"StartLine": 31,
+						"StartLinePosition": 55,
+						"StopLine": 31,
+						"StopLinePosition": 64
+					}
+				],
+				"Override": false,
+				"Annotations": null,
+				"IsConstructor": false,
+				"IsReturnNull": false,
+				"Modifiers": null
+			},
+			{
+				"Name": "testInsertBatch",
+				"Type": "void",
+				"StartLine": 35,
+				"StartLinePosition": 16,
+				"StopLine": 46,
+				"StopLinePosition": 31,
+				"Parameters": null,
+				"MethodCalls": [
+					{
+						"Package": "",
+						"Type": "creator",
+						"Class": "ArrayList\u003c\u003e",
+						"MethodName": "",
+						"StartLine": 36,
+						"StartLinePosition": 40,
+						"StopLine": 36,
+						"StopLinePosition": 52
+					},
+					{
+						"Package": "com.macro.mall.model",
+						"Type": "creator",
+						"Class": "PmsMemberPrice",
+						"MethodName": "",
+						"StartLine": 38,
+						"StartLinePosition": 45,
+						"StopLine": 38,
+						"StopLinePosition": 60
+					},
+					{
+						"Package": "com.macro.mall.model",
+						"Type": "chain",
+						"Class": "PmsMemberPrice",
+						"MethodName": "setProductId",
+						"StartLine": 39,
+						"StartLinePosition": 24,
+						"StopLine": 39,
+						"StopLinePosition": 36
+					},
+					{
+						"Package": "com.macro.mall.model",
+						"Type": "chain",
+						"Class": "PmsMemberPrice",
+						"MethodName": "setMemberLevelId",
+						"StartLine": 40,
+						"StartLinePosition": 24,
+						"StopLine": 40,
+						"StopLinePosition": 40
+					},
+					{
+						"Package": "com.macro.mall.model",
+						"Type": "chain",
+						"Class": "PmsMemberPrice",
+						"MethodName": "setMemberPrice",
+						"StartLine": 41,
+						"StartLinePosition": 24,
+						"StopLine": 41,
+						"StopLinePosition": 38
+					},
+					{
+						"Package": "java.math",
+						"Type": "creator",
+						"Class": "BigDecimal",
+						"MethodName": "",
+						"StartLine": 41,
+						"StartLinePosition": 43,
+						"StopLine": 41,
+						"StopLinePosition": 58
+					},
+					{
+						"Package": "com.macro.mall",
+						"Type": "",
+						"Class": "List\u003cPmsMemberPrice\u003e",
+						"MethodName": "add",
+						"StartLine": 42,
+						"StartLinePosition": 17,
+						"StopLine": 42,
+						"StopLinePosition": 20
+					},
+					{
+						"Package": "com.macro.mall.dao",
+						"Type": "chain",
+						"Class": "PmsMemberPriceDao",
+						"MethodName": "insertList",
+						"StartLine": 44,
+						"StartLinePosition": 35,
+						"StopLine": 44,
+						"StopLinePosition": 45
+					},
+					{
+						"Package": "org.junit",
+						"Type": "chain",
+						"Class": "Assert",
+						"MethodName": "assertEquals",
+						"StartLine": 45,
+						"StartLinePosition": 15,
+						"StopLine": 45,
+						"StopLinePosition": 27
+					}
+				],
+				"Override": false,
+				"Annotations": [
+					{
+						"QualifiedName": "Autowired",
+						"ValuePairs": null
+					},
+					{
+						"QualifiedName": "Autowired",
+						"ValuePairs": null
+					},
+					{
+						"QualifiedName": "Test",
+						"ValuePairs": null
+					},
+					{
+						"QualifiedName": "Transactional",
+						"ValuePairs": null
+					},
+					{
+						"QualifiedName": "Rollback",
+						"ValuePairs": null
+					}
+				],
+				"IsConstructor": false,
+				"IsReturnNull": false,
+				"Modifiers": null
+			},
+			{
+				"Name": "testGetProductUpdateInfo",
+				"Type": "void",
+				"StartLine": 49,
+				"StartLinePosition": 17,
+				"StopLine": 53,
+				"StopLinePosition": 41,
+				"Parameters": null,
+				"MethodCalls": [
+					{
+						"Package": "com.macro.mall.dao",
+						"Type": "chain",
+						"Class": "PmsProductDao",
+						"MethodName": "getUpdateInfo",
+						"StartLine": 50,
+						"StartLinePosition": 52,
+						"StopLine": 50,
+						"StopLinePosition": 65
+					},
+					{
+						"Package": "cn.hutool.json",
+						"Type": "chain",
+						"Class": "JSONUtil",
+						"MethodName": "parse",
+						"StartLine": 51,
+						"StartLinePosition": 31,
+						"StopLine": 51,
+						"StopLinePosition": 36
+					},
+					{
+						"Package": "cn.hutool.json",
+						"Type": "chain",
+						"Class": "JSONUtil",
+						"MethodName": "toString",
+						"StartLine": 51,
+						"StartLinePosition": 52,
+						"StopLine": 51,
+						"StopLinePosition": 60
+					},
+					{
+						"Package": "org.slf4j",
+						"Type": "chain",
+						"Class": "Logger",
+						"MethodName": "info",
+						"StartLine": 52,
+						"StartLinePosition": 15,
+						"StopLine": 52,
+						"StopLinePosition": 19
+					}
+				],
+				"Override": false,
+				"Annotations": [
+					{
+						"QualifiedName": "Autowired",
+						"ValuePairs": null
+					},
+					{
+						"QualifiedName": "Autowired",
+						"ValuePairs": null
+					},
+					{
+						"QualifiedName": "Test",
+						"ValuePairs": null
+					},
+					{
+						"QualifiedName": "Transactional",
+						"ValuePairs": null
+					},
+					{
+						"QualifiedName": "Rollback",
+						"ValuePairs": null
+					},
+					{
+						"QualifiedName": "Test",
+						"ValuePairs": null
+					}
+				],
+				"IsConstructor": false,
+				"IsReturnNull": false,
+				"Modifiers": null
+			}
+		],
+		"MethodCalls": [
+			{
+				"Package": "com.macro.mall.dao",
+				"Type": "field",
+				"Class": "PmsMemberPriceDao",
+				"MethodName": "",
+				"StartLine": 28,
+				"StartLinePosition": 12,
+				"StopLine": 28,
+				"StopLinePosition": 44
+			},
+			{
+				"Package": "com.macro.mall.dao",
+				"Type": "field",
+				"Class": "PmsProductDao",
+				"MethodName": "",
+				"StartLine": 30,
+				"StartLinePosition": 12,
+				"StopLine": 30,
+				"StopLinePosition": 36
+			},
+			{
+				"Package": "org.slf4j",
+				"Type": "field",
+				"Class": "Logger",
+				"MethodName": "",
+				"StartLine": 31,
+				"StartLinePosition": 25,
+				"StopLine": 31,
+				"StopLinePosition": 83
+			}
+		],
+		"Extend": "",
+		"Implements": null,
+		"Annotations": [
+			{
+				"QualifiedName": "RunWith",
+				"ValuePairs": [
+					{
+						"Key": "SpringRunner.class",
+						"Value": "SpringRunner.class"
+					}
+				]
+			},
+			{
+				"QualifiedName": "SpringBootTest",
+				"ValuePairs": null
+			}
+		]
+	},
+	{
+		"Package": "com.macro.mall",
+		"Class": "MallDemoApplicationTests",
+		"Type": "Class",
+		"Path": "mall-demo/src/test/java/com/macro/mall/MallDemoApplicationTests.java",
+		"Fields": [
+			{
+				"Type": "Logger",
+				"Value": "logger"
+			}
+		],
+		"Methods": [
+			{
+				"Name": "",
+				"Type": "",
+				"StartLine": 0,
+				"StartLinePosition": 0,
+				"StopLine": 0,
+				"StopLinePosition": 0,
+				"Parameters": null,
+				"MethodCalls": [
+					{
+						"Package": "org.slf4j",
+						"Type": "chain",
+						"Class": "LoggerFactory",
+						"MethodName": "getLogger",
+						"StartLine": 15,
+						"StartLinePosition": 39,
+						"StopLine": 15,
+						"StopLinePosition": 48
+					}
+				],
+				"Override": false,
+				"Annotations": null,
+				"IsConstructor": false,
+				"IsReturnNull": false,
+				"Modifiers": null
+			},
+			{
+				"Name": "contextLoads",
+				"Type": "void",
+				"StartLine": 17,
+				"StartLinePosition": 13,
+				"StopLine": 18,
+				"StopLinePosition": 25,
+				"Parameters": null,
+				"MethodCalls": null,
+				"Override": false,
+				"Annotations": [
+					{
+						"QualifiedName": "Test",
+						"ValuePairs": null
+					}
+				],
+				"IsConstructor": false,
+				"IsReturnNull": false,
+				"Modifiers": null
+			},
+			{
+				"Name": "testLogStash",
+				"Type": "void",
+				"StartLine": 21,
+				"StartLinePosition": 13,
+				"StopLine": 29,
+				"StopLinePosition": 25,
+				"Parameters": null,
+				"MethodCalls": [
+					{
+						"Package": "com.fasterxml.jackson.databind",
+						"Type": "creator",
+						"Class": "ObjectMapper",
+						"MethodName": "",
+						"StartLine": 22,
+						"StartLinePosition": 28,
+						"StopLine": 22,
+						"StopLinePosition": 41
+					},
+					{
+						"Package": "com.macro.mall.model",
+						"Type": "creator",
+						"Class": "PmsProduct",
+						"MethodName": "",
+						"StartLine": 23,
+						"StartLinePosition": 27,
+						"StopLine": 23,
+						"StopLinePosition": 38
+					},
+					{
+						"Package": "com.macro.mall.model",
+						"Type": "chain",
+						"Class": "PmsProduct",
+						"MethodName": "setId",
+						"StartLine": 24,
+						"StartLinePosition": 10,
+						"StopLine": 24,
+						"StopLinePosition": 15
+					},
+					{
+						"Package": "com.macro.mall.model",
+						"Type": "chain",
+						"Class": "PmsProduct",
+						"MethodName": "setName",
+						"StartLine": 25,
+						"StartLinePosition": 10,
+						"StopLine": 25,
+						"StopLinePosition": 17
+					},
+					{
+						"Package": "com.macro.mall.model",
+						"Type": "chain",
+						"Class": "PmsProduct",
+						"MethodName": "setBrandName",
+						"StartLine": 26,
+						"StartLinePosition": 10,
+						"StopLine": 26,
+						"StopLinePosition": 22
+					},
+					{
+						"Package": "org.slf4j",
+						"Type": "chain",
+						"Class": "Logger",
+						"MethodName": "info",
+						"StartLine": 27,
+						"StartLinePosition": 9,
+						"StopLine": 27,
+						"StopLinePosition": 13
+					},
+					{
+						"Package": "com.fasterxml.jackson.databind",
+						"Type": "chain",
+						"Class": "ObjectMapper",
+						"MethodName": "writeValueAsString",
+						"StartLine": 27,
+						"StartLinePosition": 21,
+						"StopLine": 27,
+						"StopLinePosition": 39
+					},
+					{
+						"Package": "org.slf4j",
+						"Type": "chain",
+						"Class": "Logger",
+						"MethodName": "error",
+						"StartLine": 28,
+						"StartLinePosition": 9,
+						"StopLine": 28,
+						"StopLinePosition": 14
+					},
+					{
+						"Package": "com.fasterxml.jackson.databind",
+						"Type": "chain",
+						"Class": "ObjectMapper",
+						"MethodName": "writeValueAsString",
+						"StartLine": 28,
+						"StartLinePosition": 22,
+						"StopLine": 28,
+						"StopLinePosition": 40
+					}
+				],
+				"Override": false,
+				"Annotations": [
+					{
+						"QualifiedName": "Test",
+						"ValuePairs": null
+					},
+					{
+						"QualifiedName": "Test",
+						"ValuePairs": null
+					}
+				],
+				"IsConstructor": false,
+				"IsReturnNull": false,
+				"Modifiers": null
+			}
+		],
+		"MethodCalls": [
+			{
+				"Package": "org.slf4j",
+				"Type": "field",
+				"Class": "Logger",
+				"MethodName": "",
+				"StartLine": 15,
+				"StartLinePosition": 9,
+				"StopLine": 15,
+				"StopLinePosition": 80
+			}
+		],
+		"Extend": "",
+		"Implements": null,
+		"Annotations": [
+			{
+				"QualifiedName": "RunWith",
+				"ValuePairs": [
+					{
+						"Key": "SpringRunner.class",
+						"Value": "SpringRunner.class"
+					}
+				]
+			},
+			{
+				"QualifiedName": "SpringBootTest",
+				"ValuePairs": null
+			}
+		]
+	},
+	{
+		"Package": "com.macro.mall.portal",
+		"Class": "MallPortalApplicationTests",
+		"Type": "Class",
+		"Path": "mall-portal/src/test/java/com/macro/mall/portal/MallPortalApplicationTests.java",
+		"Fields": null,
+		"Methods": [
+			{
+				"Name": "contextLoads",
+				"Type": "void",
+				"StartLine": 13,
+				"StartLinePosition": 16,
+				"StopLine": 14,
+				"StopLinePosition": 28,
+				"Parameters": null,
+				"MethodCalls": null,
+				"Override": false,
+				"Annotations": [
+					{
+						"QualifiedName": "Test",
+						"ValuePairs": null
+					}
+				],
+				"IsConstructor": false,
+				"IsReturnNull": false,
+				"Modifiers": null
+			}
+		],
+		"MethodCalls": null,
+		"Extend": "",
+		"Implements": null,
+		"Annotations": [
+			{
+				"QualifiedName": "RunWith",
+				"ValuePairs": [
+					{
+						"Key": "SpringRunner.class",
+						"Value": "SpringRunner.class"
+					}
+				]
+			},
+			{
+				"QualifiedName": "SpringBootTest",
+				"ValuePairs": null
+			}
+		]
+	},
+	{
+		"Package": "com.macro.mall.portal",
+		"Class": "PortalProductDaoTests",
+		"Type": "Class",
+		"Path": "mall-portal/src/test/java/com/macro/mall/portal/PortalProductDaoTests.java",
+		"Fields": [
+			{
+				"Type": "PortalProductDao",
+				"Value": "portalProductDao"
+			}
+		],
+		"Methods": [
+			{
+				"Name": "testGetPromotionProductList",
+				"Type": "void",
+				"StartLine": 25,
+				"StartLinePosition": 16,
+				"StopLine": 33,
+				"StopLinePosition": 43,
+				"Parameters": null,
+				"MethodCalls": [
+					{
+						"Package": "",
+						"Type": "creator",
+						"Class": "ArrayList\u003c\u003e",
+						"MethodName": "",
+						"StartLine": 26,
+						"StartLinePosition": 29,
+						"StopLine": 26,
+						"StopLinePosition": 41
+					},
+					{
+						"Package": "com.macro.mall.portal",
+						"Type": "",
+						"Class": "List\u003cLong\u003e",
+						"MethodName": "add",
+						"StartLine": 27,
+						"StartLinePosition": 12,
+						"StopLine": 27,
+						"StopLinePosition": 15
+					},
+					{
+						"Package": "com.macro.mall.portal",
+						"Type": "",
+						"Class": "List\u003cLong\u003e",
+						"MethodName": "add",
+						"StartLine": 28,
+						"StartLinePosition": 12,
+						"StopLine": 28,
+						"StopLinePosition": 15
+					},
+					{
+						"Package": "com.macro.mall.portal",
+						"Type": "",
+						"Class": "List\u003cLong\u003e",
+						"MethodName": "add",
+						"StartLine": 29,
+						"StartLinePosition": 12,
+						"StopLine": 29,
+						"StopLinePosition": 15
+					},
+					{
+						"Package": "com.macro.mall.portal",
+						"Type": "",
+						"Class": "List\u003cLong\u003e",
+						"MethodName": "add",
+						"StartLine": 30,
+						"StartLinePosition": 12,
+						"StopLine": 30,
+						"StopLinePosition": 15
+					},
+					{
+						"Package": "com.macro.mall.portal.dao",
+						"Type": "chain",
+						"Class": "PortalProductDao",
+						"MethodName": "getPromotionProductList",
+						"StartLine": 31,
+						"StartLinePosition": 71,
+						"StopLine": 31,
+						"StopLinePosition": 94
+					},
+					{
+						"Package": "org.junit",
+						"Type": "chain",
+						"Class": "Assert",
+						"MethodName": "assertEquals",
+						"StartLine": 32,
+						"StartLinePosition": 15,
+						"StopLine": 32,
+						"StopLinePosition": 27
+					},
+					{
+						"Package": "com.macro.mall.portal",
+						"Type": "",
+						"Class": "List\u003cPromotionProduct\u003e",
+						"MethodName": "size",
+						"StartLine": 32,
+						"StartLinePosition": 51,
+						"StopLine": 32,
+						"StopLinePosition": 55
+					}
+				],
+				"Override": false,
+				"Annotations": [
+					{
+						"QualifiedName": "Autowired",
+						"ValuePairs": null
+					},
+					{
+						"QualifiedName": "Test",
+						"ValuePairs": null
+					}
+				],
+				"IsConstructor": false,
+				"IsReturnNull": false,
+				"Modifiers": null
+			}
+		],
+		"MethodCalls": [
+			{
+				"Package": "com.macro.mall.portal.dao",
+				"Type": "field",
+				"Class": "PortalProductDao",
+				"MethodName": "",
+				"StartLine": 23,
+				"StartLinePosition": 12,
+				"StopLine": 23,
+				"StopLinePosition": 45
+			}
+		],
+		"Extend": "",
+		"Implements": null,
+		"Annotations": [
+			{
+				"QualifiedName": "RunWith",
+				"ValuePairs": [
+					{
+						"Key": "SpringRunner.class",
+						"Value": "SpringRunner.class"
+					}
+				]
+			},
+			{
+				"QualifiedName": "SpringBootTest",
+				"ValuePairs": null
+			}
+		]
+	},
+	{
+		"Package": "com.macro.mall.search",
+		"Class": "MallSearchApplicationTests",
+		"Type": "Class",
+		"Path": "mall-search/src/test/java/com/macro/mall/search/MallSearchApplicationTests.java",
+		"Fields": [
+			{
+				"Type": "EsProductDao",
+				"Value": "productDao"
+			},
+			{
+				"Type": "ElasticsearchTemplate",
+				"Value": "elasticsearchTemplate"
+			}
+		],
+		"Methods": [
+			{
+				"Name": "contextLoads",
+				"Type": "void",
+				"StartLine": 26,
+				"StartLinePosition": 16,
+				"StopLine": 27,
+				"StopLinePosition": 28,
+				"Parameters": null,
+				"MethodCalls": null,
+				"Override": false,
+				"Annotations": [
+					{
+						"QualifiedName": "Autowired",
+						"ValuePairs": null
+					},
+					{
+						"QualifiedName": "Autowired",
+						"ValuePairs": null
+					},
+					{
+						"QualifiedName": "Test",
+						"ValuePairs": null
+					}
+				],
+				"IsConstructor": false,
+				"IsReturnNull": false,
+				"Modifiers": null
+			},
+			{
+				"Name": "testGetAllEsProductList",
+				"Type": "void",
+				"StartLine": 29,
+				"StartLinePosition": 16,
+				"StopLine": 32,
+				"StopLinePosition": 39,
+				"Parameters": null,
+				"MethodCalls": [
+					{
+						"Package": "com.macro.mall.search.dao",
+						"Type": "chain",
+						"Class": "EsProductDao",
+						"MethodName": "getAllEsProductList",
+						"StartLine": 30,
+						"StartLinePosition": 51,
+						"StopLine": 30,
+						"StopLinePosition": 70
+					},
+					{
+						"Package": "com.macro.mall.search",
+						"Type": "",
+						"Class": "System.out",
+						"MethodName": "print",
+						"StartLine": 31,
+						"StartLinePosition": 19,
+						"StopLine": 31,
+						"StopLinePosition": 24
+					}
+				],
+				"Override": false,
+				"Annotations": [
+					{
+						"QualifiedName": "Autowired",
+						"ValuePairs": null
+					},
+					{
+						"QualifiedName": "Autowired",
+						"ValuePairs": null
+					},
+					{
+						"QualifiedName": "Test",
+						"ValuePairs": null
+					},
+					{
+						"QualifiedName": "Test",
+						"ValuePairs": null
+					}
+				],
+				"IsConstructor": false,
+				"IsReturnNull": false,
+				"Modifiers": null
+			},
+			{
+				"Name": "testEsProductMapping",
+				"Type": "void",
+				"StartLine": 34,
+				"StartLinePosition": 16,
+				"StopLine": 38,
+				"StopLinePosition": 36,
+				"Parameters": null,
+				"MethodCalls": [
+					{
+						"Package": "org.springframework.data.elasticsearch.core",
+						"Type": "chain",
+						"Class": "ElasticsearchTemplate",
+						"MethodName": "putMapping",
+						"StartLine": 35,
+						"StartLinePosition": 30,
+						"StopLine": 35,
+						"StopLinePosition": 40
+					},
+					{
+						"Package": "org.springframework.data.elasticsearch.core",
+						"Type": "chain",
+						"Class": "ElasticsearchTemplate",
+						"MethodName": "getMapping",
+						"StartLine": 36,
+						"StartLinePosition": 44,
+						"StopLine": 36,
+						"StopLinePosition": 54
+					},
+					{
+						"Package": "com.macro.mall.search",
+						"Type": "",
+						"Class": "System.out",
+						"MethodName": "println",
+						"StartLine": 37,
+						"StartLinePosition": 19,
+						"StopLine": 37,
+						"StopLinePosition": 26
+					}
+				],
+				"Override": false,
+				"Annotations": [
+					{
+						"QualifiedName": "Autowired",
+						"ValuePairs": null
+					},
+					{
+						"QualifiedName": "Autowired",
+						"ValuePairs": null
+					},
+					{
+						"QualifiedName": "Test",
+						"ValuePairs": null
+					},
+					{
+						"QualifiedName": "Test",
+						"ValuePairs": null
+					}
+				],
+				"IsConstructor": false,
+				"IsReturnNull": false,
+				"Modifiers": null
+			}
+		],
+		"MethodCalls": [
+			{
+				"Package": "com.macro.mall.search.dao",
+				"Type": "field",
+				"Class": "EsProductDao",
+				"MethodName": "",
+				"StartLine": 22,
+				"StartLinePosition": 12,
+				"StopLine": 22,
+				"StopLinePosition": 35
+			},
+			{
+				"Package": "org.springframework.data.elasticsearch.core",
+				"Type": "field",
+				"Class": "ElasticsearchTemplate",
+				"MethodName": "",
+				"StartLine": 24,
+				"StartLinePosition": 12,
+				"StopLine": 24,
+				"StopLinePosition": 55
+			}
+		],
+		"Extend": "",
+		"Implements": null,
+		"Annotations": [
+			{
+				"QualifiedName": "RunWith",
+				"ValuePairs": [
+					{
+						"Key": "SpringRunner.class",
+						"Value": "SpringRunner.class"
+					}
+				]
+			},
+			{
+				"QualifiedName": "SpringBootTest",
+				"ValuePairs": null
+			}
+		]
+	}
+]

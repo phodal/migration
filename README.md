@@ -1602,7 +1602,7 @@ public Criteria andProductSnLike(String value) {
 }
 ```
 
-这要重构的话是个体力活。
+这要重构的话是个体力活，详细见 [coca_reporter/bs.json](coca_reporter/bs.json)
 
 #### 架构评估
 
@@ -1654,7 +1654,27 @@ public CommonResult upload(@RequestParam("file") MultipartFile file) {
 
 #### API 架构图
 
-在生成 API 结果之后，可以打开 `coca_reporter/arch.svg` 查看项目的架构图。不过，由于项目的 API 较多，便需要一个个分析，所以你可以通过 `coca api -c -r com.macro.mall. -a /order` 查看 /order 的所有接口情况
+在生成 API 结果之后，可以打开 `coca_reporter/arch.svg` 查看项目的架构图。不过，由于项目的 API 较多，便需要一个个分析，所以你可以通过 `coca api -c -r com.macro.mall. -a /order` 查看 /order 的所有接口情况：
+
+| SIZE | METHOD |             URI             |                             CALLER                              |
+|------|--------|-----------------------------|-----------------------------------------------------------------|
+|   17 | GET    | /order/list                 | controller.OmsOrderController.list                              |
+|   11 | POST   | /order/update/delivery      | controller.OmsOrderController.delivery                          |
+|   11 | POST   | /order/update/close         | controller.OmsOrderController.close                             |
+|   11 | POST   | /order/delete               | controller.OmsOrderController.delete                            |
+|    5 | GET    | /order/{id}                 | controller.OmsOrderController.detail                            |
+|   11 | POST   | /order/update/receiverInfo  | controller.OmsOrderController.updateReceiverInfo                |
+|   11 | POST   | /order/update/moneyInfo     | controller.OmsOrderController.updateReceiverInfo                |
+|   11 | POST   | /order/update/note          | controller.OmsOrderController.updateNote                        |
+|    5 | GET    | /orderSetting/{id}          | controller.OmsOrderSettingController.getItem                    |
+|   11 | POST   | /orderSetting/update/{id}   | controller.OmsOrderSettingController.update                     |
+|    5 | POST   | /order/generateConfirmOrder | portal.controller.OmsPortalOrderController.generateConfirmOrder |
+|    2 | POST   | /order/generateOrder        | portal.controller.OmsPortalOrderController.generateOrder        |
+|    2 | POST   | /order/paySuccess           | portal.controller.OmsPortalOrderController.paySuccess           |
+|    2 | POST   | /order/cancelTimeOutOrder   | portal.controller.OmsPortalOrderController.cancelTimeOutOrder   |
+|    5 | POST   | /order/cancelOrder          | portal.controller.OmsPortalOrderController.cancelOrder          |
+
+![Coca Reporter](coca_reporter/arch.svg)
 
 #### 高引用 + 高修改分析
 
@@ -1699,9 +1719,19 @@ public CommonResult upload(@RequestParam("file") MultipartFile file) {
 
 明显这是一个订单相关的上帝类，关联的 OmsOrder 模型有 40 ~ 50 左右的字段。毫无疑问，这里就是代码中经常出现问题的地方。
 
-#### 没有测试
+#### 测试
 
-O 了
+执行了 `coca tbs`，一共找到了这几个文件
+
+```
+Start parse java call: PmsDaoTests.java
+Start parse java call: MallDemoApplicationTests.java
+Start parse java call: MallPortalApplicationTests.java
+Start parse java call: PortalProductDaoTests.java
+Start parse java call: MallSearchApplicationTests.java
+```
+
+这个相当于是没有测试吧。
 
 ### 重构策略
 

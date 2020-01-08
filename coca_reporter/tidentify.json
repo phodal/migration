@@ -1,0 +1,405 @@
+[
+	{
+		"Package": "com.macro.mall",
+		"ClassName": "PmsDaoTests",
+		"ClassType": "Class",
+		"ExtendsName": "",
+		"Extends": null,
+		"Implements": null,
+		"Methods": [
+			{
+				"Name": "testInsertBatch",
+				"Type": "void",
+				"StartLine": 35,
+				"StartLinePosition": 11,
+				"StopLine": 46,
+				"StopLinePosition": 4,
+				"Parameters": null,
+				"MethodCalls": null,
+				"Override": false,
+				"Annotations": [
+					{
+						"QualifiedName": "Autowired",
+						"ValuePairs": null
+					},
+					{
+						"QualifiedName": "Autowired",
+						"ValuePairs": null
+					},
+					{
+						"QualifiedName": "Test",
+						"ValuePairs": null
+					},
+					{
+						"QualifiedName": "Transactional",
+						"ValuePairs": null
+					},
+					{
+						"QualifiedName": "Rollback",
+						"ValuePairs": null
+					}
+				],
+				"IsConstructor": false,
+				"IsReturnNull": false,
+				"Modifiers": [
+					"public"
+				]
+			},
+			{
+				"Name": "testGetProductUpdateInfo",
+				"Type": "void",
+				"StartLine": 49,
+				"StartLinePosition": 11,
+				"StopLine": 53,
+				"StopLinePosition": 4,
+				"Parameters": null,
+				"MethodCalls": null,
+				"Override": false,
+				"Annotations": [
+					{
+						"QualifiedName": "Autowired",
+						"ValuePairs": null
+					},
+					{
+						"QualifiedName": "Autowired",
+						"ValuePairs": null
+					},
+					{
+						"QualifiedName": "Test",
+						"ValuePairs": null
+					},
+					{
+						"QualifiedName": "Transactional",
+						"ValuePairs": null
+					},
+					{
+						"QualifiedName": "Rollback",
+						"ValuePairs": null
+					},
+					{
+						"QualifiedName": "Test",
+						"ValuePairs": null
+					}
+				],
+				"IsConstructor": false,
+				"IsReturnNull": false,
+				"Modifiers": [
+					"public"
+				]
+			}
+		],
+		"Annotations": [
+			{
+				"QualifiedName": "RunWith",
+				"ValuePairs": [
+					{
+						"Key": "SpringRunner.class",
+						"Value": "SpringRunner.class"
+					}
+				]
+			},
+			{
+				"QualifiedName": "SpringBootTest",
+				"ValuePairs": null
+			}
+		]
+	},
+	{
+		"Package": "com.macro.mall",
+		"ClassName": "MallDemoApplicationTests",
+		"ClassType": "Class",
+		"ExtendsName": "",
+		"Extends": null,
+		"Implements": null,
+		"Methods": [
+			{
+				"Name": "contextLoads",
+				"Type": "void",
+				"StartLine": 17,
+				"StartLinePosition": 8,
+				"StopLine": 18,
+				"StopLinePosition": 1,
+				"Parameters": null,
+				"MethodCalls": null,
+				"Override": false,
+				"Annotations": [
+					{
+						"QualifiedName": "Test",
+						"ValuePairs": null
+					}
+				],
+				"IsConstructor": false,
+				"IsReturnNull": false,
+				"Modifiers": [
+					"public"
+				]
+			},
+			{
+				"Name": "testLogStash",
+				"Type": "void",
+				"StartLine": 21,
+				"StartLinePosition": 8,
+				"StopLine": 29,
+				"StopLinePosition": 1,
+				"Parameters": null,
+				"MethodCalls": null,
+				"Override": false,
+				"Annotations": [
+					{
+						"QualifiedName": "Test",
+						"ValuePairs": null
+					},
+					{
+						"QualifiedName": "Test",
+						"ValuePairs": null
+					}
+				],
+				"IsConstructor": false,
+				"IsReturnNull": false,
+				"Modifiers": [
+					"public"
+				]
+			}
+		],
+		"Annotations": [
+			{
+				"QualifiedName": "RunWith",
+				"ValuePairs": [
+					{
+						"Key": "SpringRunner.class",
+						"Value": "SpringRunner.class"
+					}
+				]
+			},
+			{
+				"QualifiedName": "SpringBootTest",
+				"ValuePairs": null
+			}
+		]
+	},
+	{
+		"Package": "com.macro.mall.portal",
+		"ClassName": "MallPortalApplicationTests",
+		"ClassType": "Class",
+		"ExtendsName": "",
+		"Extends": null,
+		"Implements": null,
+		"Methods": [
+			{
+				"Name": "contextLoads",
+				"Type": "void",
+				"StartLine": 13,
+				"StartLinePosition": 11,
+				"StopLine": 14,
+				"StopLinePosition": 4,
+				"Parameters": null,
+				"MethodCalls": null,
+				"Override": false,
+				"Annotations": [
+					{
+						"QualifiedName": "Test",
+						"ValuePairs": null
+					}
+				],
+				"IsConstructor": false,
+				"IsReturnNull": false,
+				"Modifiers": [
+					"public"
+				]
+			}
+		],
+		"Annotations": [
+			{
+				"QualifiedName": "RunWith",
+				"ValuePairs": [
+					{
+						"Key": "SpringRunner.class",
+						"Value": "SpringRunner.class"
+					}
+				]
+			},
+			{
+				"QualifiedName": "SpringBootTest",
+				"ValuePairs": null
+			}
+		]
+	},
+	{
+		"Package": "com.macro.mall.portal",
+		"ClassName": "PortalProductDaoTests",
+		"ClassType": "Class",
+		"ExtendsName": "",
+		"Extends": null,
+		"Implements": null,
+		"Methods": [
+			{
+				"Name": "testGetPromotionProductList",
+				"Type": "void",
+				"StartLine": 25,
+				"StartLinePosition": 11,
+				"StopLine": 33,
+				"StopLinePosition": 4,
+				"Parameters": null,
+				"MethodCalls": null,
+				"Override": false,
+				"Annotations": [
+					{
+						"QualifiedName": "Autowired",
+						"ValuePairs": null
+					},
+					{
+						"QualifiedName": "Test",
+						"ValuePairs": null
+					}
+				],
+				"IsConstructor": false,
+				"IsReturnNull": false,
+				"Modifiers": [
+					"public"
+				]
+			}
+		],
+		"Annotations": [
+			{
+				"QualifiedName": "RunWith",
+				"ValuePairs": [
+					{
+						"Key": "SpringRunner.class",
+						"Value": "SpringRunner.class"
+					}
+				]
+			},
+			{
+				"QualifiedName": "SpringBootTest",
+				"ValuePairs": null
+			}
+		]
+	},
+	{
+		"Package": "com.macro.mall.search",
+		"ClassName": "MallSearchApplicationTests",
+		"ClassType": "Class",
+		"ExtendsName": "",
+		"Extends": null,
+		"Implements": null,
+		"Methods": [
+			{
+				"Name": "contextLoads",
+				"Type": "void",
+				"StartLine": 26,
+				"StartLinePosition": 11,
+				"StopLine": 27,
+				"StopLinePosition": 4,
+				"Parameters": null,
+				"MethodCalls": null,
+				"Override": false,
+				"Annotations": [
+					{
+						"QualifiedName": "Autowired",
+						"ValuePairs": null
+					},
+					{
+						"QualifiedName": "Autowired",
+						"ValuePairs": null
+					},
+					{
+						"QualifiedName": "Test",
+						"ValuePairs": null
+					}
+				],
+				"IsConstructor": false,
+				"IsReturnNull": false,
+				"Modifiers": [
+					"public"
+				]
+			},
+			{
+				"Name": "testGetAllEsProductList",
+				"Type": "void",
+				"StartLine": 29,
+				"StartLinePosition": 11,
+				"StopLine": 32,
+				"StopLinePosition": 4,
+				"Parameters": null,
+				"MethodCalls": null,
+				"Override": false,
+				"Annotations": [
+					{
+						"QualifiedName": "Autowired",
+						"ValuePairs": null
+					},
+					{
+						"QualifiedName": "Autowired",
+						"ValuePairs": null
+					},
+					{
+						"QualifiedName": "Test",
+						"ValuePairs": null
+					},
+					{
+						"QualifiedName": "Test",
+						"ValuePairs": null
+					}
+				],
+				"IsConstructor": false,
+				"IsReturnNull": false,
+				"Modifiers": [
+					"public"
+				]
+			},
+			{
+				"Name": "testEsProductMapping",
+				"Type": "void",
+				"StartLine": 34,
+				"StartLinePosition": 11,
+				"StopLine": 38,
+				"StopLinePosition": 4,
+				"Parameters": null,
+				"MethodCalls": null,
+				"Override": false,
+				"Annotations": [
+					{
+						"QualifiedName": "Autowired",
+						"ValuePairs": null
+					},
+					{
+						"QualifiedName": "Autowired",
+						"ValuePairs": null
+					},
+					{
+						"QualifiedName": "Test",
+						"ValuePairs": null
+					},
+					{
+						"QualifiedName": "Test",
+						"ValuePairs": null
+					},
+					{
+						"QualifiedName": "Test",
+						"ValuePairs": null
+					}
+				],
+				"IsConstructor": false,
+				"IsReturnNull": false,
+				"Modifiers": [
+					"public"
+				]
+			}
+		],
+		"Annotations": [
+			{
+				"QualifiedName": "RunWith",
+				"ValuePairs": [
+					{
+						"Key": "SpringRunner.class",
+						"Value": "SpringRunner.class"
+					}
+				]
+			},
+			{
+				"QualifiedName": "SpringBootTest",
+				"ValuePairs": null
+			}
+		]
+	}
+]

@@ -1,0 +1,32 @@
+[
+	{
+		"FileName": "mall-demo/src/test/java/com/macro/mall/MallDemoApplicationTests.java",
+		"Type": "EmptyTest",
+		"Description": "",
+		"Line": 0
+	},
+	{
+		"FileName": "mall-portal/src/test/java/com/macro/mall/portal/MallPortalApplicationTests.java",
+		"Type": "EmptyTest",
+		"Description": "",
+		"Line": 0
+	},
+	{
+		"FileName": "mall-search/src/test/java/com/macro/mall/search/MallSearchApplicationTests.java",
+		"Type": "EmptyTest",
+		"Description": "",
+		"Line": 0
+	},
+	{
+		"FileName": "mall-search/src/test/java/com/macro/mall/search/MallSearchApplicationTests.java",
+		"Type": "RedundantPrintTest",
+		"Description": "",
+		"Line": 0
+	},
+	{
+		"FileName": "mall-search/src/test/java/com/macro/mall/search/MallSearchApplicationTests.java",
+		"Type": "RedundantPrintTest",
+		"Description": "",
+		"Line": 0
+	}
+]

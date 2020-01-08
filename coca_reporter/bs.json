@@ -1,0 +1,1217 @@
+[
+	{
+		"EntityName": "mall-admin/src/main/java/com/macro/mall/bo/WebLog.java",
+		"BS": "dataClass",
+		"Size": 22
+	},
+	{
+		"EntityName": "mall-admin/src/main/java/com/macro/mall/component/WebLogAspect.java",
+		"Line": "56",
+		"BS": "longMethod",
+		"Description": "method length: 35",
+		"Size": 35
+	},
+	{
+		"EntityName": "mall-admin/src/main/java/com/macro/mall/config/MyBatisConfig.java",
+		"BS": "lazyElement",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-admin/src/main/java/com/macro/mall/dto/MinioUploadDto.java",
+		"BS": "lazyElement",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-admin/src/main/java/com/macro/mall/dto/OmsMoneyInfoParam.java",
+		"BS": "lazyElement",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-admin/src/main/java/com/macro/mall/dto/OmsOrderDeliveryParam.java",
+		"BS": "lazyElement",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-admin/src/main/java/com/macro/mall/dto/OmsOrderDetail.java",
+		"BS": "lazyElement",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-admin/src/main/java/com/macro/mall/dto/OmsOrderQueryParam.java",
+		"BS": "lazyElement",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-admin/src/main/java/com/macro/mall/dto/OmsOrderReturnApplyResult.java",
+		"BS": "lazyElement",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-admin/src/main/java/com/macro/mall/dto/OmsReceiverInfoParam.java",
+		"BS": "lazyElement",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-admin/src/main/java/com/macro/mall/dto/OmsReturnApplyQueryParam.java",
+		"BS": "lazyElement",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-admin/src/main/java/com/macro/mall/dto/OmsUpdateStatusParam.java",
+		"BS": "lazyElement",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-admin/src/main/java/com/macro/mall/dto/OssCallbackParam.java",
+		"BS": "dataClass",
+		"Size": 6
+	},
+	{
+		"EntityName": "mall-admin/src/main/java/com/macro/mall/dto/OssCallbackResult.java",
+		"BS": "dataClass",
+		"Size": 10
+	},
+	{
+		"EntityName": "mall-admin/src/main/java/com/macro/mall/dto/OssPolicyResult.java",
+		"BS": "dataClass",
+		"Size": 12
+	},
+	{
+		"EntityName": "mall-admin/src/main/java/com/macro/mall/dto/PmsBrandParam.java",
+		"BS": "dataClass",
+		"Size": 16
+	},
+	{
+		"EntityName": "mall-admin/src/main/java/com/macro/mall/dto/PmsProductAttributeCategoryItem.java",
+		"BS": "dataClass",
+		"Size": 2
+	},
+	{
+		"EntityName": "mall-admin/src/main/java/com/macro/mall/dto/PmsProductAttributeParam.java",
+		"BS": "dataClass",
+		"Size": 22
+	},
+	{
+		"EntityName": "mall-admin/src/main/java/com/macro/mall/dto/PmsProductCategoryParam.java",
+		"BS": "dataClass",
+		"Size": 20
+	},
+	{
+		"EntityName": "mall-admin/src/main/java/com/macro/mall/dto/PmsProductCategoryWithChildrenItem.java",
+		"BS": "dataClass",
+		"Size": 2
+	},
+	{
+		"EntityName": "mall-admin/src/main/java/com/macro/mall/dto/PmsProductParam.java",
+		"BS": "dataClass",
+		"Size": 14
+	},
+	{
+		"EntityName": "mall-admin/src/main/java/com/macro/mall/dto/PmsProductQueryParam.java",
+		"BS": "dataClass",
+		"Size": 12
+	},
+	{
+		"EntityName": "mall-admin/src/main/java/com/macro/mall/dto/PmsProductResult.java",
+		"BS": "dataClass",
+		"Size": 2
+	},
+	{
+		"EntityName": "mall-admin/src/main/java/com/macro/mall/dto/ProductAttrInfo.java",
+		"BS": "dataClass",
+		"Size": 4
+	},
+	{
+		"EntityName": "mall-admin/src/main/java/com/macro/mall/dto/SmsCouponParam.java",
+		"BS": "dataClass",
+		"Size": 4
+	},
+	{
+		"EntityName": "mall-admin/src/main/java/com/macro/mall/dto/SmsFlashPromotionProduct.java",
+		"BS": "lazyElement",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-admin/src/main/java/com/macro/mall/dto/SmsFlashPromotionSessionDetail.java",
+		"BS": "lazyElement",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-admin/src/main/java/com/macro/mall/dto/UmsAdminLoginParam.java",
+		"BS": "dataClass",
+		"Size": 4
+	},
+	{
+		"EntityName": "mall-admin/src/main/java/com/macro/mall/dto/UmsAdminParam.java",
+		"BS": "lazyElement",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-admin/src/main/java/com/macro/mall/dto/UmsPermissionNode.java",
+		"BS": "lazyElement",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-admin/src/main/java/com/macro/mall/dto/UpdateAdminPasswordParam.java",
+		"BS": "lazyElement",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-admin/src/main/java/com/macro/mall/service/impl/OssServiceImpl.java",
+		"Line": "50",
+		"BS": "longMethod",
+		"Description": "method length: 37",
+		"Size": 37
+	},
+	{
+		"EntityName": "mall-admin/src/main/java/com/macro/mall/service/impl/PmsProductServiceImpl.java",
+		"Line": "120",
+		"BS": "longMethod",
+		"Description": "method length: 44",
+		"Size": 44
+	},
+	{
+		"EntityName": "mall-admin/src/main/java/com/macro/mall/service/impl/PmsProductServiceImpl.java",
+		"Line": "266",
+		"BS": "longMethod",
+		"Description": "method length: 59",
+		"Size": 59
+	},
+	{
+		"EntityName": "mall-admin/src/main/java/com/macro/mall/service/impl/SmsHomeAdvertiseServiceImpl.java",
+		"Line": "60",
+		"BS": "longMethod",
+		"Description": "method length: 32",
+		"Size": 32
+	},
+	{
+		"EntityName": "mall-admin/src/main/java/com/macro/mall/validator/FlagValidator.java",
+		"BS": "lazyElement",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-demo/src/main/java/com/macro/mall/demo/config/MyBatisConfig.java",
+		"BS": "lazyElement",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-demo/src/main/java/com/macro/mall/demo/dto/PmsBrandDto.java",
+		"BS": "dataClass",
+		"Size": 16
+	},
+	{
+		"EntityName": "mall-demo/src/main/java/com/macro/mall/demo/validator/FlagValidator.java",
+		"BS": "lazyElement",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/CommentGenerator.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/CmsHelpCategoryExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/CmsHelpCategoryExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 90",
+		"Size": 90
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/CmsHelpExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/CmsHelpExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 102",
+		"Size": 102
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/CmsMemberReportExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/CmsMemberReportExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 116",
+		"Size": 116
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/CmsPrefrenceAreaExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/CmsPrefrenceAreaExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 78",
+		"Size": 78
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/CmsPrefrenceAreaProductRelationExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/CmsPrefrenceAreaProductRelationExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 50",
+		"Size": 50
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/CmsSubjectCategoryExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/CmsSubjectCategoryExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 90",
+		"Size": 90
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/CmsSubjectCommentExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/CmsSubjectCommentExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 104",
+		"Size": 104
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/CmsSubjectExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/CmsSubjectExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 204",
+		"Size": 204
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/CmsSubjectProductRelationExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/CmsSubjectProductRelationExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 50",
+		"Size": 50
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/CmsTopicCategoryExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/CmsTopicCategoryExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 90",
+		"Size": 90
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/CmsTopicCommentExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/CmsTopicCommentExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 104",
+		"Size": 104
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/CmsTopicExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/CmsTopicExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 152",
+		"Size": 152
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/OmsCartItemExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/OmsCartItemExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 288",
+		"Size": 288
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/OmsCompanyAddressExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/OmsCompanyAddressExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 148",
+		"Size": 148
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/OmsOrder.java",
+		"Line": "494",
+		"BS": "longMethod",
+		"Description": "method length: 52",
+		"Size": 52
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/OmsOrderExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/OmsOrderExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 576",
+		"Size": 576
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/OmsOrderItem.java",
+		"Line": "265",
+		"BS": "longMethod",
+		"Description": "method length: 32",
+		"Size": 32
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/OmsOrderItemExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/OmsOrderItemExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 324",
+		"Size": 324
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/OmsOrderOperateHistoryExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/OmsOrderOperateHistoryExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 90",
+		"Size": 90
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/OmsOrderReturnApply.java",
+		"Line": "308",
+		"BS": "longMethod",
+		"Description": "method length: 35",
+		"Size": 35
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/OmsOrderReturnApplyExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/OmsOrderReturnApplyExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 368",
+		"Size": 368
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/OmsOrderReturnReasonExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/OmsOrderReturnReasonExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 76",
+		"Size": 76
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/OmsOrderSettingExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/OmsOrderSettingExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 86",
+		"Size": 86
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/PmsAlbumExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/PmsAlbumExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 92",
+		"Size": 92
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/PmsAlbumPicExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/PmsAlbumPicExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 52",
+		"Size": 52
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/PmsBrandExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/PmsBrandExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 142",
+		"Size": 142
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/PmsCommentExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/PmsCommentExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 194",
+		"Size": 194
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/PmsCommentReplayExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/PmsCommentReplayExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 104",
+		"Size": 104
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/PmsFeightTemplateExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/PmsFeightTemplateExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 114",
+		"Size": 114
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/PmsMemberPriceExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/PmsMemberPriceExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 76",
+		"Size": 76
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/PmsProduct.java",
+		"Line": "462",
+		"BS": "longMethod",
+		"Description": "method length: 50",
+		"Size": 50
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/PmsProductAttributeCategoryExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/PmsProductAttributeCategoryExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 64",
+		"Size": 64
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/PmsProductAttributeExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/PmsProductAttributeExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 162",
+		"Size": 162
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/PmsProductAttributeValueExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/PmsProductAttributeValueExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 64",
+		"Size": 64
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/PmsProductCategoryAttributeRelationExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/PmsProductCategoryAttributeRelationExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 50",
+		"Size": 50
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/PmsProductCategoryExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/PmsProductCategoryExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 154",
+		"Size": 154
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/PmsProductExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/PmsProductExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 494",
+		"Size": 494
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/PmsProductFullReductionExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/PmsProductFullReductionExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 62",
+		"Size": 62
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/PmsProductLadderExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/PmsProductLadderExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 74",
+		"Size": 74
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/PmsProductOperateLogExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/PmsProductOperateLogExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 160",
+		"Size": 160
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/PmsProductVertifyRecordExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/PmsProductVertifyRecordExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 90",
+		"Size": 90
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/PmsSkuStockExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/PmsSkuStockExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 180",
+		"Size": 180
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/SmsCouponExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/SmsCouponExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 236",
+		"Size": 236
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/SmsCouponHistoryExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/SmsCouponHistoryExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 152",
+		"Size": 152
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/SmsCouponProductCategoryRelationExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/SmsCouponProductCategoryRelationExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 78",
+		"Size": 78
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/SmsCouponProductRelationExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/SmsCouponProductRelationExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 78",
+		"Size": 78
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/SmsFlashPromotionExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/SmsFlashPromotionExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 91",
+		"Size": 91
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/SmsFlashPromotionLogExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/SmsFlashPromotionLogExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 102",
+		"Size": 102
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/SmsFlashPromotionProductRelationExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/SmsFlashPromotionProductRelationExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 110",
+		"Size": 110
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/SmsFlashPromotionSessionExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/SmsFlashPromotionSessionExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 91",
+		"Size": 91
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/SmsHomeAdvertiseExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/SmsHomeAdvertiseExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 166",
+		"Size": 166
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/SmsHomeBrandExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/SmsHomeBrandExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 76",
+		"Size": 76
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/SmsHomeNewProductExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/SmsHomeNewProductExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 76",
+		"Size": 76
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/SmsHomeRecommendProductExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/SmsHomeRecommendProductExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 76",
+		"Size": 76
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/SmsHomeRecommendSubjectExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/SmsHomeRecommendSubjectExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 76",
+		"Size": 76
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/UmsAdminExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/UmsAdminExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 146",
+		"Size": 146
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/UmsAdminLoginLogExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/UmsAdminLoginLogExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 92",
+		"Size": 92
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/UmsAdminPermissionRelationExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/UmsAdminPermissionRelationExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 62",
+		"Size": 62
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/UmsAdminRoleRelationExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/UmsAdminRoleRelationExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 50",
+		"Size": 50
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/UmsGrowthChangeHistoryExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/UmsGrowthChangeHistoryExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 114",
+		"Size": 114
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/UmsIntegrationChangeHistoryExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/UmsIntegrationChangeHistoryExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 114",
+		"Size": 114
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/UmsIntegrationConsumeSettingExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/UmsIntegrationConsumeSettingExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 74",
+		"Size": 74
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/UmsMemberExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/UmsMemberExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 261",
+		"Size": 261
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/UmsMemberLevelExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/UmsMemberLevelExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 174",
+		"Size": 174
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/UmsMemberLoginLogExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/UmsMemberLoginLogExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 104",
+		"Size": 104
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/UmsMemberMemberTagRelationExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/UmsMemberMemberTagRelationExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 50",
+		"Size": 50
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/UmsMemberProductCategoryRelationExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/UmsMemberProductCategoryRelationExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 50",
+		"Size": 50
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/UmsMemberReceiveAddressExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/UmsMemberReceiveAddressExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 148",
+		"Size": 148
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/UmsMemberRuleSettingExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/UmsMemberRuleSettingExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 98",
+		"Size": 98
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/UmsMemberStatisticsInfoExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/UmsMemberStatisticsInfoExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 206",
+		"Size": 206
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/UmsMemberTagExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/UmsMemberTagExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 64",
+		"Size": 64
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/UmsMemberTaskExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/UmsMemberTaskExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 76",
+		"Size": 76
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/UmsPermissionExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/UmsPermissionExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 142",
+		"Size": 142
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/UmsRoleExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/UmsRoleExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 102",
+		"Size": 102
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/UmsRolePermissionRelationExample.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-mbg/src/main/java/com/macro/mall/model/UmsRolePermissionRelationExample.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 50",
+		"Size": 50
+	},
+	{
+		"EntityName": "mall-portal/src/main/java/com/macro/mall/portal/config/MyBatisConfig.java",
+		"BS": "lazyElement",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-portal/src/main/java/com/macro/mall/portal/config/SpringTaskConfig.java",
+		"BS": "lazyElement",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-portal/src/main/java/com/macro/mall/portal/domain/CartProduct.java",
+		"BS": "dataClass",
+		"Size": 4
+	},
+	{
+		"EntityName": "mall-portal/src/main/java/com/macro/mall/portal/domain/CartPromotionItem.java",
+		"BS": "dataClass",
+		"Size": 10
+	},
+	{
+		"EntityName": "mall-portal/src/main/java/com/macro/mall/portal/domain/ConfirmOrderResult.java",
+		"BS": "dataClass",
+		"Size": 20
+	},
+	{
+		"EntityName": "mall-portal/src/main/java/com/macro/mall/portal/domain/FlashPromotionProduct.java",
+		"BS": "lazyElement",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-portal/src/main/java/com/macro/mall/portal/domain/HomeContentResult.java",
+		"BS": "lazyElement",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-portal/src/main/java/com/macro/mall/portal/domain/HomeFlashPromotion.java",
+		"BS": "lazyElement",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-portal/src/main/java/com/macro/mall/portal/domain/MemberBrandAttention.java",
+		"BS": "dataClass",
+		"Size": 20
+	},
+	{
+		"EntityName": "mall-portal/src/main/java/com/macro/mall/portal/domain/MemberProductCollection.java",
+		"BS": "dataClass",
+		"Size": 20
+	},
+	{
+		"EntityName": "mall-portal/src/main/java/com/macro/mall/portal/domain/MemberReadHistory.java",
+		"BS": "dataClass",
+		"Size": 20
+	},
+	{
+		"EntityName": "mall-portal/src/main/java/com/macro/mall/portal/domain/OmsOrderDetail.java",
+		"BS": "dataClass",
+		"Size": 2
+	},
+	{
+		"EntityName": "mall-portal/src/main/java/com/macro/mall/portal/domain/OmsOrderReturnApplyParam.java",
+		"BS": "lazyElement",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-portal/src/main/java/com/macro/mall/portal/domain/OrderParam.java",
+		"BS": "dataClass",
+		"Size": 8
+	},
+	{
+		"EntityName": "mall-portal/src/main/java/com/macro/mall/portal/domain/PromotionProduct.java",
+		"BS": "dataClass",
+		"Size": 6
+	},
+	{
+		"EntityName": "mall-portal/src/main/java/com/macro/mall/portal/domain/QueueEnum.java",
+		"BS": "lazyElement",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-portal/src/main/java/com/macro/mall/portal/domain/SmsCouponHistoryDetail.java",
+		"BS": "dataClass",
+		"Size": 6
+	},
+	{
+		"EntityName": "mall-portal/src/main/java/com/macro/mall/portal/service/impl/OmsPortalOrderServiceImpl.java",
+		"Line": "86",
+		"BS": "longMethod",
+		"Description": "method length: 144",
+		"Size": 144
+	},
+	{
+		"EntityName": "mall-portal/src/main/java/com/macro/mall/portal/service/impl/OmsPortalOrderServiceImpl.java",
+		"BS": "largeClass",
+		"Description": "methods number (without getter/setter): 22",
+		"Size": 22
+	},
+	{
+		"EntityName": "mall-portal/src/main/java/com/macro/mall/portal/service/impl/OmsPromotionServiceImpl.java",
+		"Line": "30",
+		"BS": "longMethod",
+		"Description": "method length: 79",
+		"Size": 79
+	},
+	{
+		"EntityName": "mall-portal/src/main/java/com/macro/mall/portal/service/impl/UmsMemberCouponServiceImpl.java",
+		"Line": "33",
+		"BS": "longMethod",
+		"Description": "method length: 38",
+		"Size": 38
+	},
+	{
+		"EntityName": "mall-portal/src/main/java/com/macro/mall/portal/service/impl/UmsMemberCouponServiceImpl.java",
+		"Line": "106",
+		"BS": "longMethod",
+		"Description": "method length: 55",
+		"Size": 55
+	},
+	{
+		"EntityName": "mall-portal/src/main/java/com/macro/mall/portal/util/DateUtil.java",
+		"BS": "dataClass",
+		"Size": 2
+	},
+	{
+		"EntityName": "mall-search/src/main/java/com/macro/mall/search/config/MyBatisConfig.java",
+		"BS": "lazyElement",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-search/src/main/java/com/macro/mall/search/controller/EsProductController.java",
+		"Line": "80",
+		"BS": "longParameterList",
+		"Description": "[{\"Name\":\"String\",\"Type\":\"keyword\"},{\"Name\":\"Long\",\"Type\":\"brandId\"},{\"Name\":\"Long\",\"Type\":\"productCategoryId\"},{\"Name\":\"Integer\",\"Type\":\"pageNum\"},{\"Name\":\"Integer\",\"Type\":\"pageSize\"},{\"Name\":\"Integer\",\"Type\":\"sort\"}]",
+		"Size": 6
+	},
+	{
+		"EntityName": "mall-search/src/main/java/com/macro/mall/search/domain/EsProduct.java",
+		"BS": "dataClass",
+		"Size": 36
+	},
+	{
+		"EntityName": "mall-search/src/main/java/com/macro/mall/search/domain/EsProductAttributeValue.java",
+		"BS": "dataClass",
+		"Size": 10
+	},
+	{
+		"EntityName": "mall-search/src/main/java/com/macro/mall/search/domain/EsProductRelatedInfo.java",
+		"BS": "dataClass",
+		"Size": 12
+	},
+	{
+		"EntityName": "mall-search/src/main/java/com/macro/mall/search/service/EsProductService.java",
+		"Line": "42",
+		"BS": "longParameterList",
+		"Description": "[{\"Name\":\"String\",\"Type\":\"keyword\"},{\"Name\":\"Long\",\"Type\":\"brandId\"},{\"Name\":\"Long\",\"Type\":\"productCategoryId\"},{\"Name\":\"Integer\",\"Type\":\"pageNum\"},{\"Name\":\"Integer\",\"Type\":\"pageSize\"},{\"Name\":\"Integer\",\"Type\":\"sort\"}]",
+		"Size": 6
+	},
+	{
+		"EntityName": "mall-search/src/main/java/com/macro/mall/search/service/impl/EsProductServiceImpl.java",
+		"Line": "106",
+		"BS": "longMethod",
+		"Description": "method length: 55",
+		"Size": 55
+	},
+	{
+		"EntityName": "mall-search/src/main/java/com/macro/mall/search/service/impl/EsProductServiceImpl.java",
+		"Line": "106",
+		"BS": "longParameterList",
+		"Description": "[{\"Name\":\"String\",\"Type\":\"keyword\"},{\"Name\":\"Long\",\"Type\":\"brandId\"},{\"Name\":\"Long\",\"Type\":\"productCategoryId\"},{\"Name\":\"Integer\",\"Type\":\"pageNum\"},{\"Name\":\"Integer\",\"Type\":\"pageSize\"},{\"Name\":\"Integer\",\"Type\":\"sort\"}]",
+		"Size": 6
+	},
+	{
+		"EntityName": "mall-search/src/main/java/com/macro/mall/search/service/impl/EsProductServiceImpl.java",
+		"Line": "164",
+		"BS": "longMethod",
+		"Description": "method length: 33",
+		"Size": 33
+	},
+	{
+		"EntityName": "mall-search/src/main/java/com/macro/mall/search/service/impl/EsProductServiceImpl.java",
+		"Line": "232",
+		"BS": "longMethod",
+		"Description": "method length: 39",
+		"Size": 39
+	},
+	{
+		"EntityName": "mall-security/src/main/java/com/macro/mall/security/config/IgnoreUrlsConfig.java",
+		"BS": "lazyElement",
+		"Size": 0
+	},
+	{
+		"EntityName": "mall-security/src/main/java/com/macro/mall/security/config/SecurityConfig.java",
+		"BS": "refusedBequest",
+		"Size": 0
+	}
+]

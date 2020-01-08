@@ -1,0 +1,144 @@
+digraph G { 
+
+"GET /order/list" -> "controller.OmsOrderController.list";
+"controller.OmsOrderController.list" -> "service.OmsOrderService.list";
+"common.api.CommonResult.success" -> ".CommonResult<T>";
+"common.api.CommonResult.success" -> "common.api.ResultCode.SUCCESS.getCode";
+"controller.OmsOrderController.list" -> "common.api.CommonResult.success";
+"common.api.CommonPage.restPage" -> ".CommonPage<T>";
+"common.api.CommonPage.restPage" -> "common.api.Object.setTotalPage";
+"common.api.CommonPage.restPage" -> "common.api.Page<T>.getTotalPages";
+"common.api.CommonPage.restPage" -> "common.api.Object.setPageNum";
+"common.api.CommonPage.restPage" -> "common.api.Page<T>.getNumber";
+"common.api.CommonPage.restPage" -> "common.api.Object.setPageSize";
+"common.api.CommonPage.restPage" -> "common.api.Page<T>.getSize";
+"common.api.CommonPage.restPage" -> "common.api.Object.setTotal";
+"common.api.CommonPage.restPage" -> "common.api.Page<T>.getTotalElements";
+"common.api.CommonPage.restPage" -> "common.api.Object.setList";
+"common.api.CommonPage.restPage" -> "common.api.Page<T>.getContent";
+"controller.OmsOrderController.list" -> "common.api.CommonPage.restPage";
+
+"POST /order/update/delivery" -> "controller.OmsOrderController.delivery";
+"controller.OmsOrderController.delivery" -> "service.OmsOrderService.delivery";
+"common.api.CommonResult.success" -> ".CommonResult<T>";
+"common.api.CommonResult.success" -> "common.api.ResultCode.SUCCESS.getCode";
+"controller.OmsOrderController.delivery" -> "common.api.CommonResult.success";
+
+"common.api.CommonResult.failed" -> "common.api.CommonResult.failed";
+"common.api.CommonResult.failed" -> "common.api.CommonResult.failed";
+"common.api.CommonResult.failed" -> "common.api.CommonResult.failed";
+"common.api.CommonResult.failed" -> "common.api.CommonResult.failed";
+"common.api.CommonResult.failed" -> "common.api.CommonResult.failed";
+"controller.OmsOrderController.delivery" -> "common.api.CommonResult.failed";
+
+"POST /order/update/close" -> "controller.OmsOrderController.close";
+"controller.OmsOrderController.close" -> "service.OmsOrderService.close";
+"common.api.CommonResult.success" -> ".CommonResult<T>";
+"common.api.CommonResult.success" -> "common.api.ResultCode.SUCCESS.getCode";
+"controller.OmsOrderController.close" -> "common.api.CommonResult.success";
+
+"common.api.CommonResult.failed" -> "common.api.CommonResult.failed";
+"common.api.CommonResult.failed" -> "common.api.CommonResult.failed";
+"common.api.CommonResult.failed" -> "common.api.CommonResult.failed";
+"common.api.CommonResult.failed" -> "common.api.CommonResult.failed";
+"common.api.CommonResult.failed" -> "common.api.CommonResult.failed";
+"controller.OmsOrderController.close" -> "common.api.CommonResult.failed";
+
+"POST /order/delete" -> "controller.OmsOrderController.delete";
+"controller.OmsOrderController.delete" -> "service.OmsOrderService.delete";
+"common.api.CommonResult.success" -> ".CommonResult<T>";
+"common.api.CommonResult.success" -> "common.api.ResultCode.SUCCESS.getCode";
+"controller.OmsOrderController.delete" -> "common.api.CommonResult.success";
+
+"common.api.CommonResult.failed" -> "common.api.CommonResult.failed";
+"common.api.CommonResult.failed" -> "common.api.CommonResult.failed";
+"common.api.CommonResult.failed" -> "common.api.CommonResult.failed";
+"common.api.CommonResult.failed" -> "common.api.CommonResult.failed";
+"common.api.CommonResult.failed" -> "common.api.CommonResult.failed";
+"controller.OmsOrderController.delete" -> "common.api.CommonResult.failed";
+
+"GET /order/{id}" -> "controller.OmsOrderController.detail";
+"controller.OmsOrderController.detail" -> "service.OmsOrderService.detail";
+"common.api.CommonResult.success" -> ".CommonResult<T>";
+"common.api.CommonResult.success" -> "common.api.ResultCode.SUCCESS.getCode";
+"controller.OmsOrderController.detail" -> "common.api.CommonResult.success";
+
+"POST /order/update/receiverInfo" -> "controller.OmsOrderController.updateReceiverInfo";
+"controller.OmsOrderController.updateReceiverInfo" -> "service.OmsOrderService.updateMoneyInfo";
+"common.api.CommonResult.success" -> ".CommonResult<T>";
+"common.api.CommonResult.success" -> "common.api.ResultCode.SUCCESS.getCode";
+"controller.OmsOrderController.updateReceiverInfo" -> "common.api.CommonResult.success";
+
+"common.api.CommonResult.failed" -> "common.api.CommonResult.failed";
+"common.api.CommonResult.failed" -> "common.api.CommonResult.failed";
+"common.api.CommonResult.failed" -> "common.api.CommonResult.failed";
+"common.api.CommonResult.failed" -> "common.api.CommonResult.failed";
+"common.api.CommonResult.failed" -> "common.api.CommonResult.failed";
+"controller.OmsOrderController.updateReceiverInfo" -> "common.api.CommonResult.failed";
+
+"POST /order/update/moneyInfo" -> "controller.OmsOrderController.updateReceiverInfo";
+"controller.OmsOrderController.updateReceiverInfo" -> "service.OmsOrderService.updateMoneyInfo";
+"common.api.CommonResult.success" -> ".CommonResult<T>";
+"common.api.CommonResult.success" -> "common.api.ResultCode.SUCCESS.getCode";
+"controller.OmsOrderController.updateReceiverInfo" -> "common.api.CommonResult.success";
+
+"common.api.CommonResult.failed" -> "common.api.CommonResult.failed";
+"common.api.CommonResult.failed" -> "common.api.CommonResult.failed";
+"common.api.CommonResult.failed" -> "common.api.CommonResult.failed";
+"common.api.CommonResult.failed" -> "common.api.CommonResult.failed";
+"common.api.CommonResult.failed" -> "common.api.CommonResult.failed";
+"controller.OmsOrderController.updateReceiverInfo" -> "common.api.CommonResult.failed";
+
+"POST /order/update/note" -> "controller.OmsOrderController.updateNote";
+"controller.OmsOrderController.updateNote" -> "service.OmsOrderService.updateNote";
+"common.api.CommonResult.success" -> ".CommonResult<T>";
+"common.api.CommonResult.success" -> "common.api.ResultCode.SUCCESS.getCode";
+"controller.OmsOrderController.updateNote" -> "common.api.CommonResult.success";
+
+"common.api.CommonResult.failed" -> "common.api.CommonResult.failed";
+"common.api.CommonResult.failed" -> "common.api.CommonResult.failed";
+"common.api.CommonResult.failed" -> "common.api.CommonResult.failed";
+"common.api.CommonResult.failed" -> "common.api.CommonResult.failed";
+"common.api.CommonResult.failed" -> "common.api.CommonResult.failed";
+"controller.OmsOrderController.updateNote" -> "common.api.CommonResult.failed";
+
+"GET /orderSetting/{id}" -> "controller.OmsOrderSettingController.getItem";
+"controller.OmsOrderSettingController.getItem" -> "service.OmsOrderSettingService.getItem";
+"common.api.CommonResult.success" -> ".CommonResult<T>";
+"common.api.CommonResult.success" -> "common.api.ResultCode.SUCCESS.getCode";
+"controller.OmsOrderSettingController.getItem" -> "common.api.CommonResult.success";
+
+"POST /orderSetting/update/{id}" -> "controller.OmsOrderSettingController.update";
+"controller.OmsOrderSettingController.update" -> "service.OmsOrderSettingService.update";
+"common.api.CommonResult.success" -> ".CommonResult<T>";
+"common.api.CommonResult.success" -> "common.api.ResultCode.SUCCESS.getCode";
+"controller.OmsOrderSettingController.update" -> "common.api.CommonResult.success";
+
+"common.api.CommonResult.failed" -> "common.api.CommonResult.failed";
+"common.api.CommonResult.failed" -> "common.api.CommonResult.failed";
+"common.api.CommonResult.failed" -> "common.api.CommonResult.failed";
+"common.api.CommonResult.failed" -> "common.api.CommonResult.failed";
+"common.api.CommonResult.failed" -> "common.api.CommonResult.failed";
+"controller.OmsOrderSettingController.update" -> "common.api.CommonResult.failed";
+
+"POST /order/generateConfirmOrder" -> "portal.controller.OmsPortalOrderController.generateConfirmOrder";
+"portal.controller.OmsPortalOrderController.generateConfirmOrder" -> "portal.service.OmsPortalOrderService.generateConfirmOrder";
+"common.api.CommonResult.success" -> ".CommonResult<T>";
+"common.api.CommonResult.success" -> "common.api.ResultCode.SUCCESS.getCode";
+"portal.controller.OmsPortalOrderController.generateConfirmOrder" -> "common.api.CommonResult.success";
+
+"POST /order/generateOrder" -> "portal.controller.OmsPortalOrderController.generateOrder";
+"portal.controller.OmsPortalOrderController.generateOrder" -> "portal.service.OmsPortalOrderService.generateOrder";
+
+"POST /order/paySuccess" -> "portal.controller.OmsPortalOrderController.paySuccess";
+"portal.controller.OmsPortalOrderController.paySuccess" -> "portal.service.OmsPortalOrderService.paySuccess";
+
+"POST /order/cancelTimeOutOrder" -> "portal.controller.OmsPortalOrderController.cancelTimeOutOrder";
+"portal.controller.OmsPortalOrderController.cancelTimeOutOrder" -> "portal.service.OmsPortalOrderService.cancelTimeOutOrder";
+
+"POST /order/cancelOrder" -> "portal.controller.OmsPortalOrderController.cancelOrder";
+"portal.controller.OmsPortalOrderController.cancelOrder" -> "portal.service.OmsPortalOrderService.sendDelayMessageCancelOrder";
+"common.api.CommonResult.success" -> ".CommonResult<T>";
+"common.api.CommonResult.success" -> "common.api.ResultCode.SUCCESS.getCode";
+"portal.controller.OmsPortalOrderController.cancelOrder" -> "common.api.CommonResult.success";
+}

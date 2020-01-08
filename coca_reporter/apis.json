@@ -1,0 +1,2480 @@
+[
+	{
+		"Uri": "/prefrenceArea/listAll",
+		"HttpMethod": "GET",
+		"MethodName": "listAll",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": null,
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "CmsPrefrenceAreaController"
+	},
+	{
+		"Uri": "/subject/listAll",
+		"HttpMethod": "GET",
+		"MethodName": "listAll",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": null,
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "CmsSubjectController"
+	},
+	{
+		"Uri": "/subject/list",
+		"HttpMethod": "GET",
+		"MethodName": "getList",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "CmsSubjectController"
+	},
+	{
+		"Uri": "/minio/upload",
+		"HttpMethod": "POST",
+		"MethodName": "upload",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "MinioController"
+	},
+	{
+		"Uri": "/minio/delete",
+		"HttpMethod": "POST",
+		"MethodName": "delete",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "MinioController"
+	},
+	{
+		"Uri": "/companyAddress/list",
+		"HttpMethod": "GET",
+		"MethodName": "list",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": null,
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "OmsCompanyAddressController"
+	},
+	{
+		"Uri": "/order/list",
+		"HttpMethod": "GET",
+		"MethodName": "list",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "OmsOrderController"
+	},
+	{
+		"Uri": "/order/update/delivery",
+		"HttpMethod": "POST",
+		"MethodName": "delivery",
+		"ResponseStatus": "",
+		"RequestBodyClass": "List\u003cOmsOrderDeliveryParam\u003e",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "OmsOrderController"
+	},
+	{
+		"Uri": "/order/update/close",
+		"HttpMethod": "POST",
+		"MethodName": "close",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "OmsOrderController"
+	},
+	{
+		"Uri": "/order/delete",
+		"HttpMethod": "POST",
+		"MethodName": "delete",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "OmsOrderController"
+	},
+	{
+		"Uri": "/order/{id}",
+		"HttpMethod": "GET",
+		"MethodName": "detail",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "OmsOrderController"
+	},
+	{
+		"Uri": "/order/update/receiverInfo",
+		"HttpMethod": "POST",
+		"MethodName": "updateReceiverInfo",
+		"ResponseStatus": "",
+		"RequestBodyClass": "OmsReceiverInfoParam",
+		"MethodParams": {
+			"orderId": "Long",
+			"receiverCity": "String",
+			"receiverDetailAddress": "String",
+			"receiverName": "String",
+			"receiverPhone": "String",
+			"receiverPostCode": "String",
+			"receiverProvince": "String",
+			"receiverRegion": "String",
+			"status": "Integer"
+		},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "OmsOrderController"
+	},
+	{
+		"Uri": "/order/update/moneyInfo",
+		"HttpMethod": "POST",
+		"MethodName": "updateReceiverInfo",
+		"ResponseStatus": "",
+		"RequestBodyClass": "OmsMoneyInfoParam",
+		"MethodParams": {
+			"discountAmount": "BigDecimal",
+			"freightAmount": "BigDecimal",
+			"orderId": "Long",
+			"status": "Integer"
+		},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "OmsOrderController"
+	},
+	{
+		"Uri": "/order/update/note",
+		"HttpMethod": "POST",
+		"MethodName": "updateNote",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "OmsOrderController"
+	},
+	{
+		"Uri": "/returnApply/list",
+		"HttpMethod": "GET",
+		"MethodName": "list",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "OmsOrderReturnApplyController"
+	},
+	{
+		"Uri": "/returnApply/delete",
+		"HttpMethod": "POST",
+		"MethodName": "delete",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "OmsOrderReturnApplyController"
+	},
+	{
+		"Uri": "/returnApply/{id}",
+		"HttpMethod": "GET",
+		"MethodName": "getItem",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "OmsOrderReturnApplyController"
+	},
+	{
+		"Uri": "/returnApply/update/status/{id}",
+		"HttpMethod": "POST",
+		"MethodName": "updateStatus",
+		"ResponseStatus": "",
+		"RequestBodyClass": "OmsUpdateStatusParam",
+		"MethodParams": {
+			"companyAddressId": "Long",
+			"handleMan": "String",
+			"handleNote": "String",
+			"id": "Long",
+			"receiveMan": "String",
+			"receiveNote": "String",
+			"returnAmount": "BigDecimal",
+			"status": "Integer"
+		},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "OmsOrderReturnApplyController"
+	},
+	{
+		"Uri": "/returnReason/create",
+		"HttpMethod": "POST",
+		"MethodName": "create",
+		"ResponseStatus": "",
+		"RequestBodyClass": "OmsOrderReturnReason",
+		"MethodParams": {
+			"createTime": "Date",
+			"id": "Long",
+			"name": "String",
+			"sort": "Integer",
+			"status": "Integer"
+		},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "OmsOrderReturnReasonController"
+	},
+	{
+		"Uri": "/returnReason/update/{id}",
+		"HttpMethod": "POST",
+		"MethodName": "update",
+		"ResponseStatus": "",
+		"RequestBodyClass": "OmsOrderReturnReason",
+		"MethodParams": {
+			"createTime": "Date",
+			"id": "Long",
+			"name": "String",
+			"sort": "Integer",
+			"status": "Integer"
+		},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "OmsOrderReturnReasonController"
+	},
+	{
+		"Uri": "/returnReason/delete",
+		"HttpMethod": "POST",
+		"MethodName": "delete",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "OmsOrderReturnReasonController"
+	},
+	{
+		"Uri": "/returnReason/list",
+		"HttpMethod": "GET",
+		"MethodName": "list",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "OmsOrderReturnReasonController"
+	},
+	{
+		"Uri": "/returnReason/{id}",
+		"HttpMethod": "GET",
+		"MethodName": "getItem",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "OmsOrderReturnReasonController"
+	},
+	{
+		"Uri": "/returnReason/update/status",
+		"HttpMethod": "POST",
+		"MethodName": "updateStatus",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "OmsOrderReturnReasonController"
+	},
+	{
+		"Uri": "/orderSetting/{id}",
+		"HttpMethod": "GET",
+		"MethodName": "getItem",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "OmsOrderSettingController"
+	},
+	{
+		"Uri": "/orderSetting/update/{id}",
+		"HttpMethod": "POST",
+		"MethodName": "update",
+		"ResponseStatus": "",
+		"RequestBodyClass": "OmsOrderSetting",
+		"MethodParams": {
+			"commentOvertime": "Integer",
+			"confirmOvertime": "Integer",
+			"finishOvertime": "Integer",
+			"flashOrderOvertime": "Integer",
+			"id": "Long",
+			"normalOrderOvertime": "Integer"
+		},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "OmsOrderSettingController"
+	},
+	{
+		"Uri": "/aliyun/oss/policy",
+		"HttpMethod": "GET",
+		"MethodName": "policy",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": null,
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "OssController"
+	},
+	{
+		"Uri": "/aliyun/osscallback",
+		"HttpMethod": "POST",
+		"MethodName": "callback",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "OssController"
+	},
+	{
+		"Uri": "/brand/listAll",
+		"HttpMethod": "GET",
+		"MethodName": "getList",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": null,
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "PmsBrandController"
+	},
+	{
+		"Uri": "/brand/create",
+		"HttpMethod": "POST",
+		"MethodName": "create",
+		"ResponseStatus": "",
+		"RequestBodyClass": "PmsBrandParam",
+		"MethodParams": {
+			"bigPic": "String",
+			"brandStory": "String",
+			"factoryStatus": "Integer",
+			"firstLetter": "String",
+			"logo": "String",
+			"name": "String",
+			"showStatus": "Integer",
+			"sort": "Integer"
+		},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "PmsBrandController"
+	},
+	{
+		"Uri": "/brand/update/{id}",
+		"HttpMethod": "POST",
+		"MethodName": "update",
+		"ResponseStatus": "",
+		"RequestBodyClass": "PmsBrandParam",
+		"MethodParams": {
+			"bigPic": "String",
+			"brandStory": "String",
+			"factoryStatus": "Integer",
+			"firstLetter": "String",
+			"logo": "String",
+			"name": "String",
+			"showStatus": "Integer",
+			"sort": "Integer"
+		},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "PmsBrandController"
+	},
+	{
+		"Uri": "/brand/delete/{id}",
+		"HttpMethod": "GET",
+		"MethodName": "delete",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "PmsBrandController"
+	},
+	{
+		"Uri": "/brand/list",
+		"HttpMethod": "GET",
+		"MethodName": "getList",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "PmsBrandController"
+	},
+	{
+		"Uri": "/brand/{id}",
+		"HttpMethod": "GET",
+		"MethodName": "getItem",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "PmsBrandController"
+	},
+	{
+		"Uri": "/brand/delete/batch",
+		"HttpMethod": "POST",
+		"MethodName": "deleteBatch",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "PmsBrandController"
+	},
+	{
+		"Uri": "/brand/update/showStatus",
+		"HttpMethod": "POST",
+		"MethodName": "updateShowStatus",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "PmsBrandController"
+	},
+	{
+		"Uri": "/brand/update/factoryStatus",
+		"HttpMethod": "POST",
+		"MethodName": "updateFactoryStatus",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "PmsBrandController"
+	},
+	{
+		"Uri": "/productAttribute/category/create",
+		"HttpMethod": "POST",
+		"MethodName": "create",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "PmsProductAttributeCategoryController"
+	},
+	{
+		"Uri": "/productAttribute/category/update/{id}",
+		"HttpMethod": "POST",
+		"MethodName": "update",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "PmsProductAttributeCategoryController"
+	},
+	{
+		"Uri": "/productAttribute/category/delete/{id}",
+		"HttpMethod": "GET",
+		"MethodName": "delete",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "PmsProductAttributeCategoryController"
+	},
+	{
+		"Uri": "/productAttribute/category/{id}",
+		"HttpMethod": "GET",
+		"MethodName": "getItem",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "PmsProductAttributeCategoryController"
+	},
+	{
+		"Uri": "/productAttribute/category/list",
+		"HttpMethod": "GET",
+		"MethodName": "getList",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "PmsProductAttributeCategoryController"
+	},
+	{
+		"Uri": "/productAttribute/category/list/withAttr",
+		"HttpMethod": "GET",
+		"MethodName": "getListWithAttr",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": null,
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "PmsProductAttributeCategoryController"
+	},
+	{
+		"Uri": "/productAttribute/list/{cid}",
+		"HttpMethod": "GET",
+		"MethodName": "getList",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "PmsProductAttributeController"
+	},
+	{
+		"Uri": "/productAttribute/create",
+		"HttpMethod": "POST",
+		"MethodName": "create",
+		"ResponseStatus": "",
+		"RequestBodyClass": "PmsProductAttributeParam",
+		"MethodParams": {
+			"filterType": "Integer",
+			"handAddStatus": "Integer",
+			"inputList": "String",
+			"inputType": "Integer",
+			"name": "String",
+			"productAttributeCategoryId": "Long",
+			"relatedStatus": "Integer",
+			"searchType": "Integer",
+			"selectType": "Integer",
+			"sort": "Integer",
+			"type": "Integer"
+		},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "PmsProductAttributeController"
+	},
+	{
+		"Uri": "/productAttribute/update/{id}",
+		"HttpMethod": "POST",
+		"MethodName": "update",
+		"ResponseStatus": "",
+		"RequestBodyClass": "PmsProductAttributeParam",
+		"MethodParams": {
+			"filterType": "Integer",
+			"handAddStatus": "Integer",
+			"inputList": "String",
+			"inputType": "Integer",
+			"name": "String",
+			"productAttributeCategoryId": "Long",
+			"relatedStatus": "Integer",
+			"searchType": "Integer",
+			"selectType": "Integer",
+			"sort": "Integer",
+			"type": "Integer"
+		},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "PmsProductAttributeController"
+	},
+	{
+		"Uri": "/productAttribute/{id}",
+		"HttpMethod": "GET",
+		"MethodName": "getItem",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "PmsProductAttributeController"
+	},
+	{
+		"Uri": "/productAttribute/delete",
+		"HttpMethod": "POST",
+		"MethodName": "delete",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "PmsProductAttributeController"
+	},
+	{
+		"Uri": "/productAttribute/attrInfo/{productCategoryId}",
+		"HttpMethod": "GET",
+		"MethodName": "getAttrInfo",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "PmsProductAttributeController"
+	},
+	{
+		"Uri": "/productCategory/create",
+		"HttpMethod": "POST",
+		"MethodName": "create",
+		"ResponseStatus": "",
+		"RequestBodyClass": "PmsProductCategoryParam",
+		"MethodParams": {
+			"description": "String",
+			"icon": "String",
+			"keywords": "String",
+			"name": "String",
+			"navStatus": "Integer",
+			"parentId": "Long",
+			"productAttributeIdList": "List",
+			"productUnit": "String",
+			"showStatus": "Integer",
+			"sort": "Integer"
+		},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "PmsProductCategoryController"
+	},
+	{
+		"Uri": "/productCategory/update/{id}",
+		"HttpMethod": "POST",
+		"MethodName": "update",
+		"ResponseStatus": "",
+		"RequestBodyClass": "PmsProductCategoryParam",
+		"MethodParams": {
+			"description": "String",
+			"icon": "String",
+			"keywords": "String",
+			"name": "String",
+			"navStatus": "Integer",
+			"parentId": "Long",
+			"productAttributeIdList": "List",
+			"productUnit": "String",
+			"showStatus": "Integer",
+			"sort": "Integer"
+		},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "PmsProductCategoryController"
+	},
+	{
+		"Uri": "/productCategory/list/{parentId}",
+		"HttpMethod": "GET",
+		"MethodName": "getList",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "PmsProductCategoryController"
+	},
+	{
+		"Uri": "/productCategory/{id}",
+		"HttpMethod": "GET",
+		"MethodName": "getItem",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "PmsProductCategoryController"
+	},
+	{
+		"Uri": "/productCategory/delete/{id}",
+		"HttpMethod": "POST",
+		"MethodName": "delete",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "PmsProductCategoryController"
+	},
+	{
+		"Uri": "/productCategory/update/navStatus",
+		"HttpMethod": "POST",
+		"MethodName": "updateNavStatus",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "PmsProductCategoryController"
+	},
+	{
+		"Uri": "/productCategory/update/showStatus",
+		"HttpMethod": "POST",
+		"MethodName": "updateShowStatus",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "PmsProductCategoryController"
+	},
+	{
+		"Uri": "/productCategory/list/withChildren",
+		"HttpMethod": "GET",
+		"MethodName": "listWithChildren",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": null,
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "PmsProductCategoryController"
+	},
+	{
+		"Uri": "/product/create",
+		"HttpMethod": "POST",
+		"MethodName": "create",
+		"ResponseStatus": "",
+		"RequestBodyClass": "PmsProductParam",
+		"MethodParams": {
+			"memberPriceList": "List",
+			"prefrenceAreaProductRelationList": "List",
+			"productAttributeValueList": "List",
+			"productFullReductionList": "List",
+			"productLadderList": "List",
+			"skuStockList": "List",
+			"subjectProductRelationList": "List"
+		},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "PmsProductController"
+	},
+	{
+		"Uri": "/product/updateInfo/{id}",
+		"HttpMethod": "GET",
+		"MethodName": "getUpdateInfo",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "PmsProductController"
+	},
+	{
+		"Uri": "/product/update/{id}",
+		"HttpMethod": "POST",
+		"MethodName": "update",
+		"ResponseStatus": "",
+		"RequestBodyClass": "PmsProductParam",
+		"MethodParams": {
+			"memberPriceList": "List",
+			"prefrenceAreaProductRelationList": "List",
+			"productAttributeValueList": "List",
+			"productFullReductionList": "List",
+			"productLadderList": "List",
+			"skuStockList": "List",
+			"subjectProductRelationList": "List"
+		},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "PmsProductController"
+	},
+	{
+		"Uri": "/product/list",
+		"HttpMethod": "GET",
+		"MethodName": "getList",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "PmsProductController"
+	},
+	{
+		"Uri": "/product/simpleList",
+		"HttpMethod": "GET",
+		"MethodName": "getList",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "PmsProductController"
+	},
+	{
+		"Uri": "/product/update/verifyStatus",
+		"HttpMethod": "POST",
+		"MethodName": "updateVerifyStatus",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "PmsProductController"
+	},
+	{
+		"Uri": "/product/update/publishStatus",
+		"HttpMethod": "POST",
+		"MethodName": "updatePublishStatus",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "PmsProductController"
+	},
+	{
+		"Uri": "/product/update/recommendStatus",
+		"HttpMethod": "POST",
+		"MethodName": "updateRecommendStatus",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "PmsProductController"
+	},
+	{
+		"Uri": "/product/update/newStatus",
+		"HttpMethod": "POST",
+		"MethodName": "updateNewStatus",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "PmsProductController"
+	},
+	{
+		"Uri": "/product/update/deleteStatus",
+		"HttpMethod": "POST",
+		"MethodName": "updateDeleteStatus",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "PmsProductController"
+	},
+	{
+		"Uri": "/sku/{pid}",
+		"HttpMethod": "GET",
+		"MethodName": "getList",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "PmsSkuStockController"
+	},
+	{
+		"Uri": "/sku/update/{pid}",
+		"HttpMethod": "POST",
+		"MethodName": "update",
+		"ResponseStatus": "",
+		"RequestBodyClass": "List\u003cPmsSkuStock\u003e",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "PmsSkuStockController"
+	},
+	{
+		"Uri": "/coupon/create",
+		"HttpMethod": "POST",
+		"MethodName": "add",
+		"ResponseStatus": "",
+		"RequestBodyClass": "SmsCouponParam",
+		"MethodParams": {
+			"productCategoryRelationList": "List",
+			"productRelationList": "List"
+		},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsCouponController"
+	},
+	{
+		"Uri": "/coupon/delete/{id}",
+		"HttpMethod": "POST",
+		"MethodName": "delete",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsCouponController"
+	},
+	{
+		"Uri": "/coupon/update/{id}",
+		"HttpMethod": "POST",
+		"MethodName": "update",
+		"ResponseStatus": "",
+		"RequestBodyClass": "SmsCouponParam",
+		"MethodParams": {
+			"productCategoryRelationList": "List",
+			"productRelationList": "List"
+		},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsCouponController"
+	},
+	{
+		"Uri": "/coupon/list",
+		"HttpMethod": "GET",
+		"MethodName": "list",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsCouponController"
+	},
+	{
+		"Uri": "/coupon/{id}",
+		"HttpMethod": "GET",
+		"MethodName": "getItem",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsCouponController"
+	},
+	{
+		"Uri": "/couponHistory/list",
+		"HttpMethod": "GET",
+		"MethodName": "list",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsCouponHistoryController"
+	},
+	{
+		"Uri": "/flash/create",
+		"HttpMethod": "POST",
+		"MethodName": "create",
+		"ResponseStatus": "",
+		"RequestBodyClass": "SmsFlashPromotion",
+		"MethodParams": {
+			"createTime": "Date",
+			"endDate": "Date",
+			"id": "Long",
+			"startDate": "Date",
+			"status": "Integer",
+			"title": "String"
+		},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsFlashPromotionController"
+	},
+	{
+		"Uri": "/flash/update/{id}",
+		"HttpMethod": "POST",
+		"MethodName": "update",
+		"ResponseStatus": "",
+		"RequestBodyClass": "SmsFlashPromotion",
+		"MethodParams": {
+			"createTime": "Date",
+			"endDate": "Date",
+			"id": "Long",
+			"startDate": "Date",
+			"status": "Integer",
+			"title": "String"
+		},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsFlashPromotionController"
+	},
+	{
+		"Uri": "/flash/delete/{id}",
+		"HttpMethod": "POST",
+		"MethodName": "delete",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsFlashPromotionController"
+	},
+	{
+		"Uri": "/flash/update/status/{id}",
+		"HttpMethod": "POST",
+		"MethodName": "update",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsFlashPromotionController"
+	},
+	{
+		"Uri": "/flash/{id}",
+		"HttpMethod": "GET",
+		"MethodName": "getItem",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsFlashPromotionController"
+	},
+	{
+		"Uri": "/flash/list",
+		"HttpMethod": "GET",
+		"MethodName": "getItem",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsFlashPromotionController"
+	},
+	{
+		"Uri": "/flashProductRelation/create",
+		"HttpMethod": "POST",
+		"MethodName": "create",
+		"ResponseStatus": "",
+		"RequestBodyClass": "List\u003cSmsFlashPromotionProductRelation\u003e",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsFlashPromotionProductRelationController"
+	},
+	{
+		"Uri": "/flashProductRelation/update/{id}",
+		"HttpMethod": "POST",
+		"MethodName": "update",
+		"ResponseStatus": "",
+		"RequestBodyClass": "SmsFlashPromotionProductRelation",
+		"MethodParams": {
+			"flashPromotionCount": "Integer",
+			"flashPromotionId": "Long",
+			"flashPromotionLimit": "Integer",
+			"flashPromotionPrice": "BigDecimal",
+			"flashPromotionSessionId": "Long",
+			"id": "Long",
+			"productId": "Long",
+			"sort": "Integer"
+		},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsFlashPromotionProductRelationController"
+	},
+	{
+		"Uri": "/flashProductRelation/delete/{id}",
+		"HttpMethod": "POST",
+		"MethodName": "delete",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsFlashPromotionProductRelationController"
+	},
+	{
+		"Uri": "/flashProductRelation/{id}",
+		"HttpMethod": "GET",
+		"MethodName": "getItem",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsFlashPromotionProductRelationController"
+	},
+	{
+		"Uri": "/flashProductRelation/list",
+		"HttpMethod": "GET",
+		"MethodName": "list",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsFlashPromotionProductRelationController"
+	},
+	{
+		"Uri": "/flashSession/create",
+		"HttpMethod": "POST",
+		"MethodName": "create",
+		"ResponseStatus": "",
+		"RequestBodyClass": "SmsFlashPromotionSession",
+		"MethodParams": {
+			"createTime": "Date",
+			"endTime": "Date",
+			"id": "Long",
+			"name": "String",
+			"startTime": "Date",
+			"status": "Integer"
+		},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsFlashPromotionSessionController"
+	},
+	{
+		"Uri": "/flashSession/update/{id}",
+		"HttpMethod": "POST",
+		"MethodName": "update",
+		"ResponseStatus": "",
+		"RequestBodyClass": "SmsFlashPromotionSession",
+		"MethodParams": {
+			"createTime": "Date",
+			"endTime": "Date",
+			"id": "Long",
+			"name": "String",
+			"startTime": "Date",
+			"status": "Integer"
+		},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsFlashPromotionSessionController"
+	},
+	{
+		"Uri": "/flashSession/update/status/{id}",
+		"HttpMethod": "POST",
+		"MethodName": "updateStatus",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsFlashPromotionSessionController"
+	},
+	{
+		"Uri": "/flashSession/delete/{id}",
+		"HttpMethod": "POST",
+		"MethodName": "delete",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsFlashPromotionSessionController"
+	},
+	{
+		"Uri": "/flashSession/{id}",
+		"HttpMethod": "GET",
+		"MethodName": "getItem",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsFlashPromotionSessionController"
+	},
+	{
+		"Uri": "/flashSession/list",
+		"HttpMethod": "GET",
+		"MethodName": "list",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": null,
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsFlashPromotionSessionController"
+	},
+	{
+		"Uri": "/flashSession/selectList",
+		"HttpMethod": "GET",
+		"MethodName": "selectList",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsFlashPromotionSessionController"
+	},
+	{
+		"Uri": "/home/advertise/create",
+		"HttpMethod": "POST",
+		"MethodName": "create",
+		"ResponseStatus": "",
+		"RequestBodyClass": "SmsHomeAdvertise",
+		"MethodParams": {
+			"clickCount": "Integer",
+			"endTime": "Date",
+			"id": "Long",
+			"name": "String",
+			"note": "String",
+			"orderCount": "Integer",
+			"pic": "String",
+			"sort": "Integer",
+			"startTime": "Date",
+			"status": "Integer",
+			"type": "Integer",
+			"url": "String"
+		},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsHomeAdvertiseController"
+	},
+	{
+		"Uri": "/home/advertise/delete",
+		"HttpMethod": "POST",
+		"MethodName": "delete",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsHomeAdvertiseController"
+	},
+	{
+		"Uri": "/home/advertise/update/status/{id}",
+		"HttpMethod": "POST",
+		"MethodName": "updateStatus",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsHomeAdvertiseController"
+	},
+	{
+		"Uri": "/home/advertise/{id}",
+		"HttpMethod": "GET",
+		"MethodName": "getItem",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsHomeAdvertiseController"
+	},
+	{
+		"Uri": "/home/advertise/update/{id}",
+		"HttpMethod": "POST",
+		"MethodName": "update",
+		"ResponseStatus": "",
+		"RequestBodyClass": "SmsHomeAdvertise",
+		"MethodParams": {
+			"clickCount": "Integer",
+			"endTime": "Date",
+			"id": "Long",
+			"name": "String",
+			"note": "String",
+			"orderCount": "Integer",
+			"pic": "String",
+			"sort": "Integer",
+			"startTime": "Date",
+			"status": "Integer",
+			"type": "Integer",
+			"url": "String"
+		},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsHomeAdvertiseController"
+	},
+	{
+		"Uri": "/home/advertise/list",
+		"HttpMethod": "GET",
+		"MethodName": "list",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsHomeAdvertiseController"
+	},
+	{
+		"Uri": "/home/brand/create",
+		"HttpMethod": "POST",
+		"MethodName": "create",
+		"ResponseStatus": "",
+		"RequestBodyClass": "List\u003cSmsHomeBrand\u003e",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsHomeBrandController"
+	},
+	{
+		"Uri": "/home/brand/update/sort/{id}",
+		"HttpMethod": "POST",
+		"MethodName": "updateSort",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsHomeBrandController"
+	},
+	{
+		"Uri": "/home/brand/delete",
+		"HttpMethod": "POST",
+		"MethodName": "delete",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsHomeBrandController"
+	},
+	{
+		"Uri": "/home/brand/update/recommendStatus",
+		"HttpMethod": "POST",
+		"MethodName": "updateRecommendStatus",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsHomeBrandController"
+	},
+	{
+		"Uri": "/home/brand/list",
+		"HttpMethod": "GET",
+		"MethodName": "list",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsHomeBrandController"
+	},
+	{
+		"Uri": "/home/newProduct/create",
+		"HttpMethod": "POST",
+		"MethodName": "create",
+		"ResponseStatus": "",
+		"RequestBodyClass": "List\u003cSmsHomeNewProduct\u003e",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsHomeNewProductController"
+	},
+	{
+		"Uri": "/home/newProduct/update/sort/{id}",
+		"HttpMethod": "POST",
+		"MethodName": "updateSort",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsHomeNewProductController"
+	},
+	{
+		"Uri": "/home/newProduct/delete",
+		"HttpMethod": "POST",
+		"MethodName": "delete",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsHomeNewProductController"
+	},
+	{
+		"Uri": "/home/newProduct/update/recommendStatus",
+		"HttpMethod": "POST",
+		"MethodName": "updateRecommendStatus",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsHomeNewProductController"
+	},
+	{
+		"Uri": "/home/newProduct/list",
+		"HttpMethod": "GET",
+		"MethodName": "list",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsHomeNewProductController"
+	},
+	{
+		"Uri": "/home/recommendProduct/create",
+		"HttpMethod": "POST",
+		"MethodName": "create",
+		"ResponseStatus": "",
+		"RequestBodyClass": "List\u003cSmsHomeRecommendProduct\u003e",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsHomeRecommendProductController"
+	},
+	{
+		"Uri": "/home/recommendProduct/update/sort/{id}",
+		"HttpMethod": "POST",
+		"MethodName": "updateSort",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsHomeRecommendProductController"
+	},
+	{
+		"Uri": "/home/recommendProduct/delete",
+		"HttpMethod": "POST",
+		"MethodName": "delete",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsHomeRecommendProductController"
+	},
+	{
+		"Uri": "/home/recommendProduct/update/recommendStatus",
+		"HttpMethod": "POST",
+		"MethodName": "updateRecommendStatus",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsHomeRecommendProductController"
+	},
+	{
+		"Uri": "/home/recommendProduct/list",
+		"HttpMethod": "GET",
+		"MethodName": "list",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsHomeRecommendProductController"
+	},
+	{
+		"Uri": "/home/recommendSubject/create",
+		"HttpMethod": "POST",
+		"MethodName": "create",
+		"ResponseStatus": "",
+		"RequestBodyClass": "List\u003cSmsHomeRecommendSubject\u003e",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsHomeRecommendSubjectController"
+	},
+	{
+		"Uri": "/home/recommendSubject/update/sort/{id}",
+		"HttpMethod": "POST",
+		"MethodName": "updateSort",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsHomeRecommendSubjectController"
+	},
+	{
+		"Uri": "/home/recommendSubject/delete",
+		"HttpMethod": "POST",
+		"MethodName": "delete",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsHomeRecommendSubjectController"
+	},
+	{
+		"Uri": "/home/recommendSubject/update/recommendStatus",
+		"HttpMethod": "POST",
+		"MethodName": "updateRecommendStatus",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsHomeRecommendSubjectController"
+	},
+	{
+		"Uri": "/home/recommendSubject/list",
+		"HttpMethod": "GET",
+		"MethodName": "list",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "SmsHomeRecommendSubjectController"
+	},
+	{
+		"Uri": "/admin/register",
+		"HttpMethod": "POST",
+		"MethodName": "register",
+		"ResponseStatus": "",
+		"RequestBodyClass": "UmsAdminParam",
+		"MethodParams": {
+			"email": "String",
+			"icon": "String",
+			"nickName": "String",
+			"note": "String",
+			"password": "String",
+			"username": "String"
+		},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "UmsAdminController"
+	},
+	{
+		"Uri": "/admin/login",
+		"HttpMethod": "POST",
+		"MethodName": "login",
+		"ResponseStatus": "",
+		"RequestBodyClass": "UmsAdminLoginParam",
+		"MethodParams": {
+			"password": "String",
+			"username": "String"
+		},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "UmsAdminController"
+	},
+	{
+		"Uri": "/admin/refreshToken",
+		"HttpMethod": "GET",
+		"MethodName": "refreshToken",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "UmsAdminController"
+	},
+	{
+		"Uri": "/admin/info",
+		"HttpMethod": "GET",
+		"MethodName": "getAdminInfo",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "UmsAdminController"
+	},
+	{
+		"Uri": "/admin/logout",
+		"HttpMethod": "POST",
+		"MethodName": "logout",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": null,
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "UmsAdminController"
+	},
+	{
+		"Uri": "/admin/list",
+		"HttpMethod": "GET",
+		"MethodName": "list",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "UmsAdminController"
+	},
+	{
+		"Uri": "/admin/{id}",
+		"HttpMethod": "GET",
+		"MethodName": "getItem",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "UmsAdminController"
+	},
+	{
+		"Uri": "/admin/update/{id}",
+		"HttpMethod": "POST",
+		"MethodName": "update",
+		"ResponseStatus": "",
+		"RequestBodyClass": "UmsAdmin",
+		"MethodParams": {
+			"createTime": "Date",
+			"email": "String",
+			"icon": "String",
+			"id": "Long",
+			"loginTime": "Date",
+			"nickName": "String",
+			"note": "String",
+			"password": "String",
+			"status": "Integer",
+			"username": "String"
+		},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "UmsAdminController"
+	},
+	{
+		"Uri": "/admin/updatePassword",
+		"HttpMethod": "POST",
+		"MethodName": "updatePassword",
+		"ResponseStatus": "",
+		"RequestBodyClass": "UpdateAdminPasswordParam",
+		"MethodParams": {
+			"newPassword": "String",
+			"oldPassword": "String",
+			"username": "String"
+		},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "UmsAdminController"
+	},
+	{
+		"Uri": "/admin/delete/{id}",
+		"HttpMethod": "POST",
+		"MethodName": "delete",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "UmsAdminController"
+	},
+	{
+		"Uri": "/admin/role/update",
+		"HttpMethod": "POST",
+		"MethodName": "updateRole",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "UmsAdminController"
+	},
+	{
+		"Uri": "/admin/role/{adminId}",
+		"HttpMethod": "GET",
+		"MethodName": "getRoleList",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "UmsAdminController"
+	},
+	{
+		"Uri": "/admin/permission/update",
+		"HttpMethod": "POST",
+		"MethodName": "updatePermission",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "UmsAdminController"
+	},
+	{
+		"Uri": "/admin/permission/{adminId}",
+		"HttpMethod": "GET",
+		"MethodName": "getPermissionList",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "UmsAdminController"
+	},
+	{
+		"Uri": "/memberLevel/list",
+		"HttpMethod": "GET",
+		"MethodName": "list",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "UmsMemberLevelController"
+	},
+	{
+		"Uri": "/permission/create",
+		"HttpMethod": "POST",
+		"MethodName": "create",
+		"ResponseStatus": "",
+		"RequestBodyClass": "UmsPermission",
+		"MethodParams": {
+			"createTime": "Date",
+			"icon": "String",
+			"id": "Long",
+			"name": "String",
+			"pid": "Long",
+			"sort": "Integer",
+			"status": "Integer",
+			"type": "Integer",
+			"uri": "String",
+			"value": "String"
+		},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "UmsPermissionController"
+	},
+	{
+		"Uri": "/permission/update/{id}",
+		"HttpMethod": "POST",
+		"MethodName": "update",
+		"ResponseStatus": "",
+		"RequestBodyClass": "UmsPermission",
+		"MethodParams": {
+			"createTime": "Date",
+			"icon": "String",
+			"id": "Long",
+			"name": "String",
+			"pid": "Long",
+			"sort": "Integer",
+			"status": "Integer",
+			"type": "Integer",
+			"uri": "String",
+			"value": "String"
+		},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "UmsPermissionController"
+	},
+	{
+		"Uri": "/permission/delete",
+		"HttpMethod": "POST",
+		"MethodName": "delete",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "UmsPermissionController"
+	},
+	{
+		"Uri": "/permission/treeList",
+		"HttpMethod": "GET",
+		"MethodName": "treeList",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": null,
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "UmsPermissionController"
+	},
+	{
+		"Uri": "/permission/list",
+		"HttpMethod": "GET",
+		"MethodName": "list",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": null,
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "UmsPermissionController"
+	},
+	{
+		"Uri": "/role/create",
+		"HttpMethod": "POST",
+		"MethodName": "create",
+		"ResponseStatus": "",
+		"RequestBodyClass": "UmsRole",
+		"MethodParams": {
+			"adminCount": "Integer",
+			"createTime": "Date",
+			"description": "String",
+			"id": "Long",
+			"name": "String",
+			"sort": "Integer",
+			"status": "Integer"
+		},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "UmsRoleController"
+	},
+	{
+		"Uri": "/role/update/{id}",
+		"HttpMethod": "POST",
+		"MethodName": "update",
+		"ResponseStatus": "",
+		"RequestBodyClass": "UmsRole",
+		"MethodParams": {
+			"adminCount": "Integer",
+			"createTime": "Date",
+			"description": "String",
+			"id": "Long",
+			"name": "String",
+			"sort": "Integer",
+			"status": "Integer"
+		},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "UmsRoleController"
+	},
+	{
+		"Uri": "/role/delete",
+		"HttpMethod": "POST",
+		"MethodName": "delete",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "UmsRoleController"
+	},
+	{
+		"Uri": "/role/permission/{roleId}",
+		"HttpMethod": "GET",
+		"MethodName": "getPermissionList",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "UmsRoleController"
+	},
+	{
+		"Uri": "/role/permission/update",
+		"HttpMethod": "POST",
+		"MethodName": "updatePermission",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "UmsRoleController"
+	},
+	{
+		"Uri": "/role/list",
+		"HttpMethod": "GET",
+		"MethodName": "list",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": null,
+		"PackageName": "com.macro.mall.controller",
+		"ClassName": "UmsRoleController"
+	},
+	{
+		"Uri": "/role/brand/listAll",
+		"HttpMethod": "GET",
+		"MethodName": "getBrandList",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": null,
+		"PackageName": "com.macro.mall.demo.controller",
+		"ClassName": "DemoController"
+	},
+	{
+		"Uri": "/role/brand/create",
+		"HttpMethod": "POST",
+		"MethodName": "createBrand",
+		"ResponseStatus": "",
+		"RequestBodyClass": "PmsBrandDto",
+		"MethodParams": {
+			"bigPic": "String",
+			"brandStory": "String",
+			"factoryStatus": "Integer",
+			"firstLetter": "String",
+			"logo": "String",
+			"name": "String",
+			"showStatus": "Integer",
+			"sort": "Integer"
+		},
+		"PackageName": "com.macro.mall.demo.controller",
+		"ClassName": "DemoController"
+	},
+	{
+		"Uri": "/role/brand/update/{id}",
+		"HttpMethod": "POST",
+		"MethodName": "updateBrand",
+		"ResponseStatus": "",
+		"RequestBodyClass": "PmsBrandDto",
+		"MethodParams": {
+			"bigPic": "String",
+			"brandStory": "String",
+			"factoryStatus": "Integer",
+			"firstLetter": "String",
+			"logo": "String",
+			"name": "String",
+			"showStatus": "Integer",
+			"sort": "Integer"
+		},
+		"PackageName": "com.macro.mall.demo.controller",
+		"ClassName": "DemoController"
+	},
+	{
+		"Uri": "/role/brand/delete/{id}",
+		"HttpMethod": "GET",
+		"MethodName": "deleteBrand",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.demo.controller",
+		"ClassName": "DemoController"
+	},
+	{
+		"Uri": "/role/brand/list",
+		"HttpMethod": "GET",
+		"MethodName": "listBrand",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.demo.controller",
+		"ClassName": "DemoController"
+	},
+	{
+		"Uri": "/role/brand/{id}",
+		"HttpMethod": "GET",
+		"MethodName": "brand",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.demo.controller",
+		"ClassName": "DemoController"
+	},
+	{
+		"Uri": "/template/get/{id}",
+		"HttpMethod": "GET",
+		"MethodName": "getForEntity",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.demo.controller",
+		"ClassName": "RestTemplateDemoController"
+	},
+	{
+		"Uri": "/template/get2/{id}",
+		"HttpMethod": "GET",
+		"MethodName": "getForEntity2",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.demo.controller",
+		"ClassName": "RestTemplateDemoController"
+	},
+	{
+		"Uri": "/template/get3/{id}",
+		"HttpMethod": "GET",
+		"MethodName": "getForEntity3",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.demo.controller",
+		"ClassName": "RestTemplateDemoController"
+	},
+	{
+		"Uri": "/template/get4/{id}",
+		"HttpMethod": "GET",
+		"MethodName": "getForObject",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.demo.controller",
+		"ClassName": "RestTemplateDemoController"
+	},
+	{
+		"Uri": "/template/post",
+		"HttpMethod": "POST",
+		"MethodName": "postForEntity",
+		"ResponseStatus": "",
+		"RequestBodyClass": "PmsBrand",
+		"MethodParams": {
+			"bigPic": "String",
+			"brandStory": "String",
+			"factoryStatus": "Integer",
+			"firstLetter": "String",
+			"id": "Long",
+			"logo": "String",
+			"name": "String",
+			"productCommentCount": "Integer",
+			"productCount": "Integer",
+			"showStatus": "Integer",
+			"sort": "Integer"
+		},
+		"PackageName": "com.macro.mall.demo.controller",
+		"ClassName": "RestTemplateDemoController"
+	},
+	{
+		"Uri": "/template/post2",
+		"HttpMethod": "POST",
+		"MethodName": "postForObject",
+		"ResponseStatus": "",
+		"RequestBodyClass": "PmsBrand",
+		"MethodParams": {
+			"bigPic": "String",
+			"brandStory": "String",
+			"factoryStatus": "Integer",
+			"firstLetter": "String",
+			"id": "Long",
+			"logo": "String",
+			"name": "String",
+			"productCommentCount": "Integer",
+			"productCount": "Integer",
+			"showStatus": "Integer",
+			"sort": "Integer"
+		},
+		"PackageName": "com.macro.mall.demo.controller",
+		"ClassName": "RestTemplateDemoController"
+	},
+	{
+		"Uri": "/template/post3",
+		"HttpMethod": "POST",
+		"MethodName": "postForEntity3",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.demo.controller",
+		"ClassName": "RestTemplateDemoController"
+	},
+	{
+		"Uri": "/home/content",
+		"HttpMethod": "GET",
+		"MethodName": "content",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": null,
+		"PackageName": "com.macro.mall.portal.controller",
+		"ClassName": "HomeController"
+	},
+	{
+		"Uri": "/home/recommendProductList",
+		"HttpMethod": "GET",
+		"MethodName": "recommendProductList",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.portal.controller",
+		"ClassName": "HomeController"
+	},
+	{
+		"Uri": "/home/productCateList/{parentId}",
+		"HttpMethod": "GET",
+		"MethodName": "getProductCateList",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.portal.controller",
+		"ClassName": "HomeController"
+	},
+	{
+		"Uri": "/home/subjectList",
+		"HttpMethod": "GET",
+		"MethodName": "getSubjectList",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.portal.controller",
+		"ClassName": "HomeController"
+	},
+	{
+		"Uri": "/member/attention/add",
+		"HttpMethod": "POST",
+		"MethodName": "add",
+		"ResponseStatus": "",
+		"RequestBodyClass": "MemberBrandAttention",
+		"MethodParams": {
+			"brandAttentionCount": "Integer",
+			"brandCity": "String",
+			"brandId": "Long",
+			"brandLogo": "String",
+			"brandName": "String",
+			"createTime": "Date",
+			"id": "String",
+			"memberIcon": "String",
+			"memberId": "Long",
+			"memberNickname": "String"
+		},
+		"PackageName": "com.macro.mall.portal.controller",
+		"ClassName": "MemberAttentionController"
+	},
+	{
+		"Uri": "/member/attention/delete",
+		"HttpMethod": "POST",
+		"MethodName": "delete",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.portal.controller",
+		"ClassName": "MemberAttentionController"
+	},
+	{
+		"Uri": "/member/attention/list/{memberId}",
+		"HttpMethod": "GET",
+		"MethodName": "list",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.portal.controller",
+		"ClassName": "MemberAttentionController"
+	},
+	{
+		"Uri": "/member/collection/addProduct",
+		"HttpMethod": "POST",
+		"MethodName": "addProduct",
+		"ResponseStatus": "",
+		"RequestBodyClass": "MemberProductCollection",
+		"MethodParams": {
+			"createTime": "Date",
+			"id": "String",
+			"memberIcon": "String",
+			"memberId": "Long",
+			"memberNickname": "String",
+			"productId": "Long",
+			"productName": "String",
+			"productPic": "String",
+			"productPrice": "String",
+			"productSubTitle": "String"
+		},
+		"PackageName": "com.macro.mall.portal.controller",
+		"ClassName": "MemberCollectionController"
+	},
+	{
+		"Uri": "/member/collection/deleteProduct",
+		"HttpMethod": "POST",
+		"MethodName": "deleteProduct",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.portal.controller",
+		"ClassName": "MemberCollectionController"
+	},
+	{
+		"Uri": "/member/collection/listProduct/{memberId}",
+		"HttpMethod": "GET",
+		"MethodName": "listProduct",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.portal.controller",
+		"ClassName": "MemberCollectionController"
+	},
+	{
+		"Uri": "/member/readHistory/create",
+		"HttpMethod": "POST",
+		"MethodName": "create",
+		"ResponseStatus": "",
+		"RequestBodyClass": "MemberReadHistory",
+		"MethodParams": {
+			"createTime": "Date",
+			"id": "String",
+			"memberIcon": "String",
+			"memberId": "Long",
+			"memberNickname": "String",
+			"productId": "Long",
+			"productName": "String",
+			"productPic": "String",
+			"productPrice": "String",
+			"productSubTitle": "String"
+		},
+		"PackageName": "com.macro.mall.portal.controller",
+		"ClassName": "MemberReadHistoryController"
+	},
+	{
+		"Uri": "/member/readHistory/delete",
+		"HttpMethod": "POST",
+		"MethodName": "delete",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.portal.controller",
+		"ClassName": "MemberReadHistoryController"
+	},
+	{
+		"Uri": "/member/readHistory/list",
+		"HttpMethod": "GET",
+		"MethodName": "list",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.portal.controller",
+		"ClassName": "MemberReadHistoryController"
+	},
+	{
+		"Uri": "/cart/add",
+		"HttpMethod": "POST",
+		"MethodName": "add",
+		"ResponseStatus": "",
+		"RequestBodyClass": "OmsCartItem",
+		"MethodParams": {
+			"createDate": "Date",
+			"deleteStatus": "Integer",
+			"id": "Long",
+			"memberId": "Long",
+			"memberNickname": "String",
+			"modifyDate": "Date",
+			"price": "BigDecimal",
+			"productAttr": "String",
+			"productBrand": "String",
+			"productCategoryId": "Long",
+			"productId": "Long",
+			"productName": "String",
+			"productPic": "String",
+			"productSkuCode": "String",
+			"productSkuId": "Long",
+			"productSn": "String",
+			"productSubTitle": "String",
+			"quantity": "Integer",
+			"sp1": "String",
+			"sp2": "String",
+			"sp3": "String"
+		},
+		"PackageName": "com.macro.mall.portal.controller",
+		"ClassName": "OmsCartItemController"
+	},
+	{
+		"Uri": "/cart/list",
+		"HttpMethod": "GET",
+		"MethodName": "list",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": null,
+		"PackageName": "com.macro.mall.portal.controller",
+		"ClassName": "OmsCartItemController"
+	},
+	{
+		"Uri": "/cart/list/promotion",
+		"HttpMethod": "GET",
+		"MethodName": "listPromotion",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": null,
+		"PackageName": "com.macro.mall.portal.controller",
+		"ClassName": "OmsCartItemController"
+	},
+	{
+		"Uri": "/cart/update/quantity",
+		"HttpMethod": "GET",
+		"MethodName": "updateQuantity",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.portal.controller",
+		"ClassName": "OmsCartItemController"
+	},
+	{
+		"Uri": "/cart/getProduct/{productId}",
+		"HttpMethod": "GET",
+		"MethodName": "getCartProduct",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.portal.controller",
+		"ClassName": "OmsCartItemController"
+	},
+	{
+		"Uri": "/cart/update/attr",
+		"HttpMethod": "POST",
+		"MethodName": "updateAttr",
+		"ResponseStatus": "",
+		"RequestBodyClass": "OmsCartItem",
+		"MethodParams": {
+			"createDate": "Date",
+			"deleteStatus": "Integer",
+			"id": "Long",
+			"memberId": "Long",
+			"memberNickname": "String",
+			"modifyDate": "Date",
+			"price": "BigDecimal",
+			"productAttr": "String",
+			"productBrand": "String",
+			"productCategoryId": "Long",
+			"productId": "Long",
+			"productName": "String",
+			"productPic": "String",
+			"productSkuCode": "String",
+			"productSkuId": "Long",
+			"productSn": "String",
+			"productSubTitle": "String",
+			"quantity": "Integer",
+			"sp1": "String",
+			"sp2": "String",
+			"sp3": "String"
+		},
+		"PackageName": "com.macro.mall.portal.controller",
+		"ClassName": "OmsCartItemController"
+	},
+	{
+		"Uri": "/cart/delete",
+		"HttpMethod": "POST",
+		"MethodName": "delete",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.portal.controller",
+		"ClassName": "OmsCartItemController"
+	},
+	{
+		"Uri": "/cart/clear",
+		"HttpMethod": "POST",
+		"MethodName": "clear",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": null,
+		"PackageName": "com.macro.mall.portal.controller",
+		"ClassName": "OmsCartItemController"
+	},
+	{
+		"Uri": "/order/generateConfirmOrder",
+		"HttpMethod": "POST",
+		"MethodName": "generateConfirmOrder",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": null,
+		"PackageName": "com.macro.mall.portal.controller",
+		"ClassName": "OmsPortalOrderController"
+	},
+	{
+		"Uri": "/order/generateOrder",
+		"HttpMethod": "POST",
+		"MethodName": "generateOrder",
+		"ResponseStatus": "",
+		"RequestBodyClass": "OrderParam",
+		"MethodParams": {
+			"couponId": "Long",
+			"memberReceiveAddressId": "Long",
+			"payType": "Integer",
+			"useIntegration": "Integer"
+		},
+		"PackageName": "com.macro.mall.portal.controller",
+		"ClassName": "OmsPortalOrderController"
+	},
+	{
+		"Uri": "/order/paySuccess",
+		"HttpMethod": "POST",
+		"MethodName": "paySuccess",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.portal.controller",
+		"ClassName": "OmsPortalOrderController"
+	},
+	{
+		"Uri": "/order/cancelTimeOutOrder",
+		"HttpMethod": "POST",
+		"MethodName": "cancelTimeOutOrder",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": null,
+		"PackageName": "com.macro.mall.portal.controller",
+		"ClassName": "OmsPortalOrderController"
+	},
+	{
+		"Uri": "/order/cancelOrder",
+		"HttpMethod": "POST",
+		"MethodName": "cancelOrder",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.portal.controller",
+		"ClassName": "OmsPortalOrderController"
+	},
+	{
+		"Uri": "/returnApply/create",
+		"HttpMethod": "POST",
+		"MethodName": "create",
+		"ResponseStatus": "",
+		"RequestBodyClass": "OmsOrderReturnApplyParam",
+		"MethodParams": {
+			"description": "String",
+			"memberUsername": "String",
+			"orderId": "Long",
+			"orderSn": "String",
+			"productAttr": "String",
+			"productBrand": "String",
+			"productCount": "Integer",
+			"productId": "Long",
+			"productName": "String",
+			"productPic": "String",
+			"productPrice": "BigDecimal",
+			"productRealPrice": "BigDecimal",
+			"proofPics": "String",
+			"reason": "String",
+			"returnName": "String",
+			"returnPhone": "String"
+		},
+		"PackageName": "com.macro.mall.portal.controller",
+		"ClassName": "OmsPortalOrderReturnApplyController"
+	},
+	{
+		"Uri": "/sso/register",
+		"HttpMethod": "POST",
+		"MethodName": "register",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.portal.controller",
+		"ClassName": "UmsMemberController"
+	},
+	{
+		"Uri": "/sso/login",
+		"HttpMethod": "POST",
+		"MethodName": "login",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.portal.controller",
+		"ClassName": "UmsMemberController"
+	},
+	{
+		"Uri": "/sso/getAuthCode",
+		"HttpMethod": "GET",
+		"MethodName": "getAuthCode",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.portal.controller",
+		"ClassName": "UmsMemberController"
+	},
+	{
+		"Uri": "/sso/updatePassword",
+		"HttpMethod": "POST",
+		"MethodName": "updatePassword",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.portal.controller",
+		"ClassName": "UmsMemberController"
+	},
+	{
+		"Uri": "/sso/refreshToken",
+		"HttpMethod": "GET",
+		"MethodName": "refreshToken",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.portal.controller",
+		"ClassName": "UmsMemberController"
+	},
+	{
+		"Uri": "/member/coupon/add/{couponId}",
+		"HttpMethod": "POST",
+		"MethodName": "add",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.portal.controller",
+		"ClassName": "UmsMemberCouponController"
+	},
+	{
+		"Uri": "/member/coupon/list",
+		"HttpMethod": "GET",
+		"MethodName": "list",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.portal.controller",
+		"ClassName": "UmsMemberCouponController"
+	},
+	{
+		"Uri": "/member/coupon/list/cart/{type}",
+		"HttpMethod": "GET",
+		"MethodName": "listCart",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.portal.controller",
+		"ClassName": "UmsMemberCouponController"
+	},
+	{
+		"Uri": "/member/address/add",
+		"HttpMethod": "POST",
+		"MethodName": "add",
+		"ResponseStatus": "",
+		"RequestBodyClass": "UmsMemberReceiveAddress",
+		"MethodParams": {
+			"city": "String",
+			"defaultStatus": "Integer",
+			"detailAddress": "String",
+			"id": "Long",
+			"memberId": "Long",
+			"name": "String",
+			"phoneNumber": "String",
+			"postCode": "String",
+			"province": "String",
+			"region": "String"
+		},
+		"PackageName": "com.macro.mall.portal.controller",
+		"ClassName": "UmsMemberReceiveAddressController"
+	},
+	{
+		"Uri": "/member/address/delete/{id}",
+		"HttpMethod": "POST",
+		"MethodName": "delete",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.portal.controller",
+		"ClassName": "UmsMemberReceiveAddressController"
+	},
+	{
+		"Uri": "/member/address/update/{id}",
+		"HttpMethod": "POST",
+		"MethodName": "update",
+		"ResponseStatus": "",
+		"RequestBodyClass": "UmsMemberReceiveAddress",
+		"MethodParams": {
+			"city": "String",
+			"defaultStatus": "Integer",
+			"detailAddress": "String",
+			"id": "Long",
+			"memberId": "Long",
+			"name": "String",
+			"phoneNumber": "String",
+			"postCode": "String",
+			"province": "String",
+			"region": "String"
+		},
+		"PackageName": "com.macro.mall.portal.controller",
+		"ClassName": "UmsMemberReceiveAddressController"
+	},
+	{
+		"Uri": "/member/address/list",
+		"HttpMethod": "GET",
+		"MethodName": "list",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": null,
+		"PackageName": "com.macro.mall.portal.controller",
+		"ClassName": "UmsMemberReceiveAddressController"
+	},
+	{
+		"Uri": "/member/address/{id}",
+		"HttpMethod": "GET",
+		"MethodName": "getItem",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.portal.controller",
+		"ClassName": "UmsMemberReceiveAddressController"
+	},
+	{
+		"Uri": "/esProduct/importAll",
+		"HttpMethod": "POST",
+		"MethodName": "importAllList",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": null,
+		"PackageName": "com.macro.mall.search.controller",
+		"ClassName": "EsProductController"
+	},
+	{
+		"Uri": "/esProduct/delete/{id}",
+		"HttpMethod": "GET",
+		"MethodName": "delete",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.search.controller",
+		"ClassName": "EsProductController"
+	},
+	{
+		"Uri": "/esProduct/delete/batch",
+		"HttpMethod": "POST",
+		"MethodName": "delete",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.search.controller",
+		"ClassName": "EsProductController"
+	},
+	{
+		"Uri": "/esProduct/create/{id}",
+		"HttpMethod": "POST",
+		"MethodName": "create",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.search.controller",
+		"ClassName": "EsProductController"
+	},
+	{
+		"Uri": "/esProduct/search/simple",
+		"HttpMethod": "GET",
+		"MethodName": "search",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.search.controller",
+		"ClassName": "EsProductController"
+	},
+	{
+		"Uri": "/esProduct/search",
+		"HttpMethod": "GET",
+		"MethodName": "search",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.search.controller",
+		"ClassName": "EsProductController"
+	},
+	{
+		"Uri": "/esProduct/recommend/{id}",
+		"HttpMethod": "GET",
+		"MethodName": "recommend",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.search.controller",
+		"ClassName": "EsProductController"
+	},
+	{
+		"Uri": "/esProduct/search/relate",
+		"HttpMethod": "GET",
+		"MethodName": "searchRelatedInfo",
+		"ResponseStatus": "",
+		"RequestBodyClass": "",
+		"MethodParams": {},
+		"PackageName": "com.macro.mall.search.controller",
+		"ClassName": "EsProductController"
+	}
+]
