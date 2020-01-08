@@ -1902,7 +1902,17 @@ func TestTbsApp_EmptyTest(t *testing.T) {
 
 未来 10 年，你应当：
 
-1. 追求技术卓越。
-2. 推动个人变革，进而引领组织变革。
-3. 整理知识，加强教育。
-4. 在整个流程中将价值创造最大化。
+### 追求技术卓越。
+
+### 推动个人变革，进而引领组织变革
+
+### 整理知识，加强教育
+
+### 在整个流程中将价值创造最大化
+
+
+LICENSE
+---
+
+@ 2020 A Phodal Huang's Idea. This code is distributed under the CC BY-NC-SA 4.0 license. See LICENSE in this directory.
+
