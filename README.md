@@ -24,6 +24,8 @@ Phodal 手把手教你分析、评估现有系统、制定重构策略、探索�
  - 《数据库重构》
  - 《遗留系统重构指南》
  - 《软件架构师应该知道的97件事》
+ - 《架构师修炼之道》 
+ - 《实现模式》
  - 《反模式：危机中的软件，架构和项目的重构》
  - 《前端架构：从入门到微前端》
 
@@ -1015,8 +1017,8 @@ GET   /esProduct/search/simple
 
 包含相关上下文的：
 
- - 实体，只要一个对象在生命周期中能够保持连续性，并且独立于它的属性（即使这些属性对系统用户非常重要），那它就是一个实体。它具有唯一标识和生命周期。
- - 值对象，当你只关心某个对象的属性时，该对象便可作为一个值对象。它是实体的附加业务概念，用来描述实体所包含的业务信息。 
+ - 实体（entity）。只要一个对象在生命周期中能够保持连续性，并且独立于它的属性（即使这些属性对系统用户非常重要），那它就是一个实体。它具有唯一标识和生命周期。
+ - 值对象（value object）。当你只关心某个对象的属性时，该对象便可作为一个值对象。它是实体的附加业务概念，用来描述实体所包含的业务信息。 
  - 领域服务（domain service）。封装了没有在模型中自然建模为值对象或实体的领域逻辑和概念。它的主要职责是使用实现和值对象编排业务逻辑。
  - 领域事件（domain event）。它用于表明问题域中发生了一些业务人员关心的事情。在命名领域事件时，我们往往选择动词的过去分词，以明确表达事件的属性，其中文形式往往是『XXX已YYY』。
  - 资源库（repository）。公开聚合根在内存中的集合的接口，提供聚合根的检索和持久化需要。
@@ -1029,11 +1031,11 @@ GET   /esProduct/search/simple
 
 重构到微服务是一个巨大的挑战。
 
-微服务是一个生态系统，它需要大量的基础设施进行配合，如部署管道、服务发现、日志和监控、负责均衡等。
+微服务是一个生态系统，它需要大量的基础设施进行配合，如部署管道、服务注册与发现、日志和监控、负载均衡等。
 
 如果团队本身没有相关的经验，并且尝试往上调整的话，那么需要在心理上做好大量的准备。
 
-如果你的目标是重构到微服架构，那么我建议你先重构到 DDD + 整洁架构，它是微服务架构的一个中间态。即，先看看容器架构重构。
+如果你的目标是重构到微服务架构，那么我建议你先重构到 DDD + 整洁架构，它是微服务架构的一个中间态。即，先看看容器架构重构。
 
 ### …… 
 
@@ -1205,14 +1207,53 @@ Robert C. Martin 总结了六边形架构（即端口与适配器架构）、DCI
 
 如 [StackOverflow](https://stackoverflow.com/questions/1866794/naming-classes-how-to-avoid-calling-everything-a-whatevermanager) 的相关问题所列，我们还有诸如 Coordinator、Builder、Writer、Reader、Handler、Container、Protocol、Target、Converter、Controller、View、Factory、Entity、Bucket 等名称。
 
-试着干掉 Util，你将收获更多的类，笑~。
+含义更加丰富的名字启示如下：
+
+**XXX器[拟物化]：** 
+
+| Listener 监听器        | Adapter 适配器   | Filter 过滤器         | Iterator 迭代器     | Buffer 缓冲器       | Connector 连接器           |
+| ---------------------- | ---------------- | --------------------- | ------------------- | ------------------- | -------------------------- |
+| Decortor 装饰器        | Iterepter 解释器 | Interceptor 拦截器    | Reactor 反应器      | Configurator 配置器 | Wrapper 包装器             |
+| Proactor 主动器        | Monitor 监视器   | Controller 控制器     | Translator 转换器   | Acceptor 接收器     | Selector 选择器            |
+| Container 容器         | Manager 管理器   | Evictor 驱逐器        | Activator 激活器    | Mapper映射器        | Locator 定位器             |
+| Handler 处理器         | Assembler 汇编器 | Driver 驱动器         | Spliterator 分割器  | Builder 构建器      | Formatter 格式器           |
+| Scanner  扫描器        | Timer 定时器     | Converter 转化器      | Dispatcher 分配器   | Multicaster 广播器  | Transfer 传输器            |
+| Desriptor 描述器       | Encoder编码器    | Decoder 解码器        | Introspector 内省器 | Tokenizer 分词器    | Loader 加载器(ClassLoader) |
+| Logger 记录器          | Parser 解析器    | Resolver 分解器       | Incrementer 增加器  | Counter 计数器      | Collector 收集器           |
+| Initializer 初始化器   | Setter 设置器    | Getter 取值器         | Marshaller 编组器   | UnMarshaller 解组器 | Helper 帮助器              |
+| Accessor 访问器        | Visitor 访问器   | Reflector 反射器      | Embedder 嵌入器     | Finalizer 回收器    | Specifier 标识器           |
+| Supplier 供应器        | Processor 处理器 | Joiner 接合器         | Recorder 记录器     | Reducer 归集器      | Analyzer 分析器            |
+| Invoker 调用器         | Provider 供应器  | Renderer 渲染器       | Holder 持有器       | Closer 关闭器       | Operator  操作器           |
+| Appender 添加器        | Printer 打印器   | Tuplizer 元组器       | Caller 调用器       | Identifier 标识器   | Walker 漫步器              |
+| Brower 浏览器          | Server 服务器    | Aggregator 聚合器     | Binder 绑定器       | Validator 校验器    | Finder 查找器              |
+| Launcher 发射器/启动器 | Weaver 织入器    | Messenger 信差/消息器 | Extractor 提取器    | Sampler 取样器      | Profiler 优化器            |
+| Tracer 追踪器          | Estimator 预估器 | Generator 生成器      | Instrumenter 插装器 | Viewer 查看器       | Debugger 调试器            |
+| Analyser 分析器        | Inspector 检查器 | Linker 链接器         | Editor 编辑器       | Recognizer 识别器   | Decompiler 反编译器        |
+| Translator 解释器      | Lexer 词法分析器 | Tracker 追踪器        | Constructor 构造器  | Destructor 析构器   | Executor 执行器            |
+| Synchronizer 同步器    | Barrier 障碍器   | Allocator 分配器      | Bundler 打包器      | Applier 分发器      | Trigger 触发器             |
+
+
+
+**XXX者[拟人化]：**
+
+| Consumer消费者 | Producer 生产者 | Observer 观察者 | Caller 调用者 | Supervisor 监管者 | Keeper 管理员(ZooKeeper) |
+| -------------- | --------------- | --------------- | ------------- | ----------------- | ------------------------ |
+| Wokrer 工作者  |                 |                 |               |                   |                          |
+
+器和者的一些名字可以互换。比如Builder 可以是构建器，也可以是构建者。名字选择很多，但是不要过度封装，用最简单的概念表现更多的含义。
+
+
+
+
+
+试着干掉 Utils ，你将收获更多的类，笑~。
 
 Utils / Helper 多数是恶魔，无法满足单一职责和开闭原则。好的 OO 设计，大部分的类只表示一个事物，及其所有属性和操作。
 
 1. 尽可能减少 Utils / Helper 类。好的 OO 设计，大部分的类只表示一个事物，及其所有属性和操作。
-2. 如果使用一个 Util 用于操作类，如如 IList，那么它应该划到类中。除非该类不存在于当前的应用中。
-3. Util 中的方法应该是无状态的，比如没有 static 变量。
-4. 如果有大量的 utils 方法，应该把划分到类中，以便快速找到它们。
+2. 如果使用一个 Utils 用于操作类，如 IList，那么它应该划到类中。除非该类不存在于当前的应用中。
+3. Utils 中的方法应该是无状态的，比如没有 static 变量。
+4. 如果有大量的 Utils 方法，应该把划分到类中，以便快速找到它们。
 
 ### 过度设计
 
@@ -1500,7 +1541,14 @@ TBC。工具还在写，目前主要要看人眼识别。
 
 > 确保一个类只有一个实例，并提供一个全局访问点来访问该实例。—— 《设计模式：可复用面向对象软件的基础》
 
-单例对象存活的时间通常很长，它们通常存在于程序的整个生命周期中。
+单例对象存活的时间通常很长，它们通常存在于程序的整个生命周期中。一个复杂应用可能有很多个单例，会使得上述问题更加严重。
+
+整体来说它的缺点大过优点：
+
+1. 对单例类的依赖被硬编码到其他类中，对具体类的依赖性破坏了OO。
+2. 单例对接口不友好。
+3. 单例getInstance没有继承性。
+4. 多线程情况下有线程安全问题。
 
 ### 工厂封装复杂构建
 
