@@ -1827,7 +1827,7 @@ Estimated People Required 93.525243
 
 #### 基本情况评估
 
-先执行一下 `coca analysis`，然后 `coca evalute`，得到一个基本的情况
+先执行一下 `coca analysis`，然后 `coca evaluate`，得到一个基本的情况
 
 |              TYPE              | COUNT |         LEVEL         | TOTAL |   RATE    |
 |--------------------------------|-------|-----------------------|-------|-----------|
